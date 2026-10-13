@@ -2,14 +2,14 @@
 
 ## Public deliverables
 
-- [Live app](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/).
-- [Separate Monad Testnet lab](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/#/testnet).
-- [Technical demo, 179 seconds](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html).
-- [Pitch, 87 seconds](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html).
+- [Live app](https://kin-metropolis.vercel.app/).
+- [Separate Monad Testnet lab](https://kin-metropolis.vercel.app/#/testnet).
+- [Technical demo, 179 seconds](https://kin-metropolis.vercel.app/demo.html).
+- [Pitch, 87 seconds](https://kin-metropolis.vercel.app/pitch.html).
 - [Public GitHub source](https://github.com/Pradhyut21/Kin).
 - [Copy-ready application](submission/SUBMISSION_COPY_READY.txt) and [exact field counts](submission/FIELD_COUNTS.json).
 
-Native Site publication succeeded, and the root app/player pages returned HTTP 200. Both final MP4 renders passed verification. Application fields have genuine links and no placeholders. The applicant still reviews platform/team/visibility details and submits through their own account.
+Vercel is the canonical live deployment. The root app/player pages returned HTTP 200. Both final MP4 renders passed verification. Application fields have genuine links and no placeholders. The applicant still reviews platform/team/visibility details and submits through their own account.
 
 ## Product and source boundaries
 

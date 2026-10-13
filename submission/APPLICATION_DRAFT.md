@@ -79,19 +79,19 @@ https://github.com/Pradhyut21/Kin
 ## LIVE PROJECT LINK
 
 <!-- FIELD:live_project_link START -->
-https://kin-metropolis-2026.vividdaisy16.chatgpt.site/
+https://kin-metropolis.vercel.app/
 <!-- FIELD:live_project_link END -->
 
 ## TECHNICAL DEMO VIDEO — 179 seconds
 
 <!-- FIELD:technical_demo_video START -->
-https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html
+https://kin-metropolis.vercel.app/demo.html
 <!-- FIELD:technical_demo_video END -->
 
 ## PITCH VIDEO — 87 seconds
 
 <!-- FIELD:pitch_video START -->
-https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html
+https://kin-metropolis.vercel.app/pitch.html
 <!-- FIELD:pitch_video END -->
 
 ## JUDGE INSTRUCTIONS — maximum 8,000 characters
@@ -100,10 +100,10 @@ https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html
 Primary track: Consumer Products & Payments.
 Sponsor bounties: none currently claimed.
 
-Live product: https://kin-metropolis-2026.vividdaisy16.chatgpt.site/
-Separate testnet lab: https://kin-metropolis-2026.vividdaisy16.chatgpt.site/#/testnet
-Technical demo: https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html — 179 seconds.
-Pitch: https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html — 87 seconds.
+Live product: https://kin-metropolis.vercel.app/
+Separate testnet lab: https://kin-metropolis.vercel.app/#/testnet
+Technical demo: https://kin-metropolis.vercel.app/demo.html — 179 seconds.
+Pitch: https://kin-metropolis.vercel.app/pitch.html — 87 seconds.
 Public source: https://github.com/Pradhyut21/Kin
 
 Start with the consumer walkthrough. It requires no wallet or API keys and uses clearly labeled sample credits. The Priya/Mom role switch illustrates two family perspectives; it is not authentication. Use “Reset demo” if returning to a previously used browser state.

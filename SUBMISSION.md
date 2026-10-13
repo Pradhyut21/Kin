@@ -6,14 +6,14 @@
 - **Primary track:** Consumer Products & Payments.
 - **Sponsor bounty:** None currently claimed.
 - **Public source:** [GitHub repository](https://github.com/Pradhyut21/Kin).
-- **Live product:** [Kin](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/).
-- **Separate testnet lab:** [Monad lab](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/#/testnet).
-- **Technical demo:** [Working-product video, 179 seconds](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html).
-- **Pitch:** [Builder/problem/rationale video, 87 seconds](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html).
+- **Live product:** [Kin](https://kin-metropolis.vercel.app/).
+- **Separate testnet lab:** [Monad lab](https://kin-metropolis.vercel.app/#/testnet).
+- **Technical demo:** [Working-product video, 179 seconds](https://kin-metropolis.vercel.app/demo.html).
+- **Pitch:** [Builder/problem/rationale video, 87 seconds](https://kin-metropolis.vercel.app/pitch.html).
 
 Use [SUBMISSION_COPY_READY.txt](submission/SUBMISSION_COPY_READY.txt) for plain text matching the form, [APPLICATION_DRAFT.md](submission/APPLICATION_DRAFT.md) for editable fields, and [FIELD_COUNTS.json](submission/FIELD_COUNTS.json) for exact counts. Every limited field fits its maximum. The application copy contains no URL placeholders.
 
-Native Site publication succeeded. The root app and both hosted player pages returned HTTP 200. Both final MP4s passed verification and native-player checks. Internal app routes use hash paths, preserving reloads on static hosting; the routing update is included in the final source/deployment refresh.
+Vercel is the canonical live deployment. The root app and both hosted player pages returned HTTP 200. Both final MP4s passed verification and native-player checks. Internal app routes use hash paths, preserving reloads on static hosting; the routing update is included in the final source/deployment refresh.
 
 ## Product argument
 

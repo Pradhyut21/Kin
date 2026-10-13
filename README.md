@@ -2,7 +2,7 @@
 
 **Money with guardrails for families living apart.**
 
-[Open Kin](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/) · [Watch the demo · 2:59](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html) · [Watch the pitch · 1:27](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html) · [Source](https://github.com/Pradhyut21/Kin)
+[Open Kin](https://kin-metropolis.vercel.app/) · [Watch the demo · 2:59](https://kin-metropolis.vercel.app/demo.html) · [Watch the pitch · 1:27](https://kin-metropolis.vercel.app/pitch.html) · [Source](https://github.com/Pradhyut21/Kin)
 
 A transfer answers “did the money arrive?” Kin answers what comes next: **what can I spend now, what needs a conversation, and why was a payment declined?**
 

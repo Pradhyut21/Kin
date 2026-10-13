@@ -46,7 +46,7 @@
     },
     "judge_instructions": {
       "formLabel": "JUDGE INSTRUCTIONS",
-      "characters": 5095,
+      "characters": 5015,
       "words": 651,
       "maximumCharacters": 8000,
       "withinLimit": true,
@@ -62,7 +62,7 @@
     },
     "live_project_link": {
       "formLabel": "LIVE PROJECT LINK",
-      "characters": 54,
+      "characters": 34,
       "words": 1,
       "maximumCharacters": null,
       "withinLimit": null,
@@ -70,7 +70,7 @@
     },
     "technical_demo_video": {
       "formLabel": "TECHNICAL DEMO VIDEO",
-      "characters": 63,
+      "characters": 43,
       "words": 1,
       "maximumCharacters": null,
       "withinLimit": null,
@@ -78,7 +78,7 @@
     },
     "pitch_video": {
       "formLabel": "PITCH VIDEO",
-      "characters": 64,
+      "characters": 44,
       "words": 1,
       "maximumCharacters": null,
       "withinLimit": null,
@@ -142,14 +142,16 @@
     "publicSiteNativeDeploymentSucceeded": true,
     "publicLinks": {
       "repository": "https://github.com/Pradhyut21/Kin",
-      "app": "https://kin-metropolis-2026.vividdaisy16.chatgpt.site/",
-      "demo": "https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html",
-      "pitch": "https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html",
-      "testnetLab": "https://kin-metropolis-2026.vividdaisy16.chatgpt.site/#/testnet"
+      "app": "https://kin-metropolis.vercel.app/",
+      "demo": "https://kin-metropolis.vercel.app/demo.html",
+      "pitch": "https://kin-metropolis.vercel.app/pitch.html",
+      "testnetLab": "https://kin-metropolis.vercel.app/#/testnet"
     },
     "manualApplicantActions": [
       "Review team and visibility/organizer-showcase choices",
       "Complete platform checkboxes and submit through own account"
-    ]
+    ],
+    "publicVercelDeploymentSucceeded": true,
+    "canonicalHosting": "Vercel"
   }
 }
