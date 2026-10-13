@@ -1,0 +1,36 @@
+{
+  "mode": "read-only-plan",
+  "ready": true,
+  "chainId": 10143,
+  "token": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC",
+  "compiler": "0.8.24+commit.e11b9ed9.Emscripten.clang",
+  "sourceHash": "781619fca19c2a844d51a6194fc248ce48f5b0314861887685926e2699ddd2b6",
+  "contracts": {
+    "StreamVault": {
+      "creationBytecodeBytes": 6230
+    },
+    "ApprovalQueue": {
+      "creationBytecodeBytes": 5804
+    },
+    "PolicyModule": {
+      "creationBytecodeBytes": 7175
+    }
+  },
+  "stages": [
+    "deploy StreamVault(AUSD)",
+    "deploy ApprovalQueue(vault)",
+    "deploy PolicyModule(vault, queue)",
+    "queue.setPolicyModule(policy)",
+    "vault.setPolicyModule(policy)",
+    "read back code, token and dependency wiring"
+  ],
+  "existingManifest": null,
+  "signing": "No signatures in plan mode. Explicit --broadcast plus a locally supplied PRIVATE_KEY is required.",
+  "exclusions": "KinAccount is excluded. No sample family stream, deposit, token approval or sponsor integration is created by deployment.",
+  "networkVerified": true,
+  "block": 70403403,
+  "tokenMetadata": {
+    "symbol": "AUSD",
+    "decimals": 6
+  }
+}

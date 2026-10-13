@@ -1,0 +1,239 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "InsufficientFunds"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "InvalidInitialization"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "MaxAllowedExceeded"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "MaxFrequencyExceeded"
+  },
+  {
+    "type": "error",
+    "inputs": [],
+    "name": "NotInitializing"
+  },
+  {
+    "type": "error",
+    "inputs": [
+      {
+        "name": "token",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "SafeERC20FailedOperation"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "receiver",
+        "internalType": "address",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "name": "amount",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "name": "FundsRequested"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "version",
+        "internalType": "uint64",
+        "type": "uint64",
+        "indexed": false
+      }
+    ],
+    "name": "Initialized"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "_lastDripTimestamp",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "name": "SetLastDripTime"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "name": "faucetDripAmount",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "maxAmountToOwn",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      },
+      {
+        "name": "maxDripFrequency",
+        "internalType": "uint256",
+        "type": "uint256",
+        "indexed": false
+      }
+    ],
+    "name": "configureFaucet"
+  },
+  {
+    "type": "function",
+    "inputs": [],
+    "name": "AGORA_FAUCET_STORAGE_SLOT",
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "bytes32",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "inputs": [],
+    "name": "faucetDripAmount",
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_params",
+        "internalType": "struct InitializeParams",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "tokenToDistribute",
+            "internalType": "address",
+            "type": "address"
+          },
+          {
+            "name": "faucetDripAmount",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "maxAmountToOwn",
+            "internalType": "uint256",
+            "type": "uint256"
+          },
+          {
+            "name": "maxDripFrequency",
+            "internalType": "uint256",
+            "type": "uint256"
+          }
+        ]
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "inputs": [],
+    "name": "lastDripTimestamp",
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "inputs": [],
+    "name": "maxAmountToOwn",
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "inputs": [],
+    "name": "maxDripFrequency",
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "uint256",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "inputs": [
+      {
+        "name": "_receiver",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "name": "requestFunds",
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "inputs": [],
+    "name": "token",
+    "outputs": [
+      {
+        "name": "",
+        "internalType": "address",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]

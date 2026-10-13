@@ -1,0 +1,51 @@
+{
+  "chainId": 10143,
+  "token": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC",
+  "deployer": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+  "compiler": "0.8.24+commit.e11b9ed9.Emscripten.clang",
+  "sourceHash": "781619fca19c2a844d51a6194fc248ce48f5b0314861887685926e2699ddd2b6",
+  "status": "complete",
+  "contracts": {
+    "StreamVault": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+    "ApprovalQueue": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF",
+    "PolicyModule": "0x07A3d10E739A646894855bCd68A9CB2266594034"
+  },
+  "transactions": [
+    {
+      "stage": "deploy:StreamVault",
+      "hash": "0xfc0e169c99615b66173943fe27b2263d9998f672ebb8d0ec4ed37b30633b1687",
+      "status": "confirmed",
+      "block": 70408129,
+      "contractAddress": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3"
+    },
+    {
+      "stage": "deploy:ApprovalQueue",
+      "hash": "0xa7e3ddf36c72e643f01db4c551bf27f419d8d2be9a15a6bf80a685c28de23b35",
+      "status": "confirmed",
+      "block": 70408136,
+      "contractAddress": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF"
+    },
+    {
+      "stage": "deploy:PolicyModule",
+      "hash": "0x8d93f1042860c3344a528991f4ef6519f8226d896429d6a905c85fa11816a3b0",
+      "status": "confirmed",
+      "block": 70408143,
+      "contractAddress": "0x07A3d10E739A646894855bCd68A9CB2266594034"
+    },
+    {
+      "stage": "wire:queue",
+      "hash": "0xdf81288b445d4bde6d7970ebe82cd6df3072a083c98fa600c2c011746f81dbac",
+      "status": "confirmed",
+      "block": 70408163
+    },
+    {
+      "stage": "wire:vault",
+      "hash": "0x7419c1b09ae787decdbd16cdc872d6a4347de58ef8a60a95461160f2c9841ec6",
+      "status": "confirmed",
+      "block": 70408169
+    }
+  ],
+  "startedAt": "2026-10-12T13:21:52.410Z",
+  "verifiedAtBlock": 70408171,
+  "completedAt": "2026-10-12T13:22:06.727Z"
+}

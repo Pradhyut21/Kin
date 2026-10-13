@@ -1,0 +1,17 @@
+{
+  "name": "kin-contracts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/verify.mjs",
+    "compile": "node scripts/verify.mjs --compile-only",
+    "readiness": "node scripts/testnet-readiness.mjs",
+    "deploy:plan": "node scripts/deploy-testnet.mjs --plan",
+    "deploy:testnet": "node scripts/deploy-testnet.mjs"
+  },
+  "devDependencies": {
+    "solc": "0.8.24",
+    "ganache": "7.9.2",
+    "ethers": "6.16.0"
+  }
+}

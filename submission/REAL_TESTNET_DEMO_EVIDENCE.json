@@ -1,0 +1,419 @@
+{
+  "startedAt": "2026-10-12T13:25:52.608Z",
+  "chainId": 10143,
+  "network": "Monad Testnet",
+  "assets": "Free, disposable test MON and test AUSD only. No fiat, bank payout, FX or mainnet transfer.",
+  "deploymentManifest": "contracts/deployments/monad-testnet.json",
+  "contracts": {
+    "StreamVault": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+    "ApprovalQueue": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF",
+    "PolicyModule": "0x07A3d10E739A646894855bCd68A9CB2266594034"
+  },
+  "token": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC",
+  "wallets": {
+    "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+    "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+    "groceriesRecipient": "0xb8ECd04CE88e0D4314BFd5a7a5bA1AD21496a320",
+    "technologyRecipient": "0xa00b764779B65B119fA584e29fC03631FCCE5D2B",
+    "blockedRecipient": "0xcF2fD4BcA712148AE112434f34E3c4Bf957D464B"
+  },
+  "acceleratedTestingRate": {
+    "unitsPerSecond": "500000",
+    "ausdPerSecond": "0.5",
+    "label": "Accelerated test rate for short recordings; not a realistic allowance recommendation."
+  },
+  "stages": [
+    {
+      "stage": "fund-student-test-gas",
+      "hash": "0x90f770b77f4a548b3d4ba906e7d83fbef36fc36bd059dfcff86b242bd46e36ab",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x90f770b77f4a548b3d4ba906e7d83fbef36fc36bd059dfcff86b242bd46e36ab",
+      "block": 70408932,
+      "gasUsed": "21000"
+    },
+    {
+      "stage": "claim-official-test-ausd",
+      "hash": "0x44a8f364e112647b5f9fb4a600bec9dc055f641378a79a077ef1cd473db207bb",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x44a8f364e112647b5f9fb4a600bec9dc055f641378a79a077ef1cd473db207bb",
+      "block": 70408939,
+      "gasUsed": "130600"
+    },
+    {
+      "stage": "student-consents-to-parent",
+      "hash": "0x7d0a55d5f34077947ff04f4af4a34c40e46ed114e988e90db6fb44a98f6408b3",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x7d0a55d5f34077947ff04f4af4a34c40e46ed114e988e90db6fb44a98f6408b3",
+      "block": 70408945,
+      "gasUsed": "60510"
+    },
+    {
+      "stage": "approve-exact-100-test-ausd-deposit",
+      "hash": "0x3cf8c83966a46afd82de4677b63ca1e57a0278b618b4eb06808fc0037be265f0",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x3cf8c83966a46afd82de4677b63ca1e57a0278b618b4eb06808fc0037be265f0",
+      "block": 70408951,
+      "gasUsed": "71099"
+    },
+    {
+      "stage": "create-consented-100-test-ausd-stream",
+      "hash": "0x066c84228dab20852ee456954b9f2b35e718b6658377256fd06e27b8c5d66654",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x066c84228dab20852ee456954b9f2b35e718b6658377256fd06e27b8c5d66654",
+      "block": 70408957,
+      "gasUsed": "362423"
+    },
+    {
+      "stage": "set-initial-policy-cap20-threshold5-weekly100",
+      "hash": "0x6d6f819c4b4194f80b5965fca455c5ca1721abed2bf025ecfc22f521e674d37a",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x6d6f819c4b4194f80b5965fca455c5ca1721abed2bf025ecfc22f521e674d37a",
+      "block": 70408963,
+      "gasUsed": "155688"
+    },
+    {
+      "stage": "register-groceries-recipient",
+      "hash": "0x3c3d239297e78e2ed7c74b08d68b3baff5bd5d3bc5e452fb694f12a6f832528c",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x3c3d239297e78e2ed7c74b08d68b3baff5bd5d3bc5e452fb694f12a6f832528c",
+      "block": 70408969,
+      "gasUsed": "74622"
+    },
+    {
+      "stage": "register-technology-recipient",
+      "hash": "0x860767c03f2d90f0b60a5f835a2d732ec6051423117314dc996fe07abd85aa71",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x860767c03f2d90f0b60a5f835a2d732ec6051423117314dc996fe07abd85aa71",
+      "block": 70408974,
+      "gasUsed": "74622"
+    },
+    {
+      "stage": "register-blocked-example-recipient",
+      "hash": "0xe9eef3744c721458008ec39780cccdb159e4560e31ac16b007d19eb786b79437",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0xe9eef3744c721458008ec39780cccdb159e4560e31ac16b007d19eb786b79437",
+      "block": 70408980,
+      "gasUsed": "74622"
+    },
+    {
+      "stage": "set-groceries-period-budget50",
+      "hash": "0xe25b0df3e1929ffc45b429a1ab5591bcde9ea47eaa24a9d001387e2f0f9c8dfd",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0xe25b0df3e1929ffc45b429a1ab5591bcde9ea47eaa24a9d001387e2f0f9c8dfd",
+      "block": 70408986,
+      "gasUsed": "109364"
+    },
+    {
+      "stage": "set-technology-period-budget50",
+      "hash": "0xc72e444d2839a77e04cfb9f4402c6ba8e583a41eb999cc98b2de4a0bdc180c48",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0xc72e444d2839a77e04cfb9f4402c6ba8e583a41eb999cc98b2de4a0bdc180c48",
+      "block": 70408992,
+      "gasUsed": "109364"
+    },
+    {
+      "stage": "student-normal-spend-1-test-ausd",
+      "hash": "0x59a5e21d35854dee1b2dc727a8e81966ac18c976e88651930a8a54c7b824850d",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x59a5e21d35854dee1b2dc727a8e81966ac18c976e88651930a8a54c7b824850d",
+      "block": 70409046,
+      "gasUsed": "335758"
+    },
+    {
+      "stage": "student-queues-10-test-ausd-exception",
+      "hash": "0x565989bef26d0e4c8f9d50ff8b0b4035791b94b58e511e315f6ae17778d0482a",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x565989bef26d0e4c8f9d50ff8b0b4035791b94b58e511e315f6ae17778d0482a",
+      "block": 70409054,
+      "gasUsed": "431893"
+    },
+    {
+      "stage": "parent-tightens-hard-cap-to8",
+      "hash": "0xbeb8703a479e8100c2a6f0e60a7bee006a1eb69ca2b80f220b7d825444a0bea4",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0xbeb8703a479e8100c2a6f0e60a7bee006a1eb69ca2b80f220b7d825444a0bea4",
+      "block": 70409061,
+      "gasUsed": "70339"
+    },
+    {
+      "stage": "parent-restores-hard-cap-to20",
+      "hash": "0x61a2cb57e5ad49312a9715e7645b1ca810a576c8c6fd989e54b2f237c45039e4",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x61a2cb57e5ad49312a9715e7645b1ca810a576c8c6fd989e54b2f237c45039e4",
+      "block": 70409071,
+      "gasUsed": "70351"
+    },
+    {
+      "stage": "parent-approves-and-executes-10-test-ausd",
+      "hash": "0x44c64b738dfd3ea74b1483d281a1efcdf3b44ca21a935a71227c0c1aa188d44d",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x44c64b738dfd3ea74b1483d281a1efcdf3b44ca21a935a71227c0c1aa188d44d",
+      "block": 70409078,
+      "gasUsed": "328290"
+    },
+    {
+      "stage": "parent-blocks-example-recipient",
+      "hash": "0x47315b731fa7563bdb77570864994dd9476ebac2f8b2b4db9591aad4f9d0d5f8",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x47315b731fa7563bdb77570864994dd9476ebac2f8b2b4db9591aad4f9d0d5f8",
+      "block": 70409099,
+      "gasUsed": "74310"
+    }
+  ],
+  "status": "complete",
+  "streamId": "1",
+  "beforeNormalSpend": {
+    "block": 70409039,
+    "streamId": "1",
+    "active": true,
+    "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+    "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+    "escrowUnits": "100000000",
+    "earnedUnits": "12000000",
+    "pendingRequestIds": [],
+    "tokenBalancesUnits": {
+      "parent": "9900000000",
+      "student": "0",
+      "groceriesRecipient": "0",
+      "technologyRecipient": "0",
+      "blockedRecipient": "0"
+    },
+    "policy": {
+      "globalCapUnits": "20000000",
+      "approvalThresholdUnits": "5000000",
+      "weeklyLimitUnits": "100000000"
+    },
+    "escrowAUSD": "100.0",
+    "earnedAUSD": "12.0"
+  },
+  "afterNormalSpend": {
+    "block": 70409048,
+    "streamId": "1",
+    "active": true,
+    "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+    "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+    "escrowUnits": "99000000",
+    "earnedUnits": "12500000",
+    "pendingRequestIds": [],
+    "tokenBalancesUnits": {
+      "parent": "9900000000",
+      "student": "0",
+      "groceriesRecipient": "1000000",
+      "technologyRecipient": "0",
+      "blockedRecipient": "0"
+    },
+    "policy": {
+      "globalCapUnits": "20000000",
+      "approvalThresholdUnits": "5000000",
+      "weeklyLimitUnits": "100000000"
+    },
+    "escrowAUSD": "99.0",
+    "earnedAUSD": "12.5"
+  },
+  "requestId": "1",
+  "afterQueue": {
+    "block": 70409055,
+    "streamId": "1",
+    "active": true,
+    "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+    "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+    "escrowUnits": "99000000",
+    "earnedUnits": "13500000",
+    "pendingRequestIds": [
+      "1"
+    ],
+    "tokenBalancesUnits": {
+      "parent": "9900000000",
+      "student": "0",
+      "groceriesRecipient": "1000000",
+      "technologyRecipient": "0",
+      "blockedRecipient": "0"
+    },
+    "policy": {
+      "globalCapUnits": "20000000",
+      "approvalThresholdUnits": "5000000",
+      "weeklyLimitUnits": "100000000"
+    },
+    "escrowAUSD": "99.0",
+    "earnedAUSD": "13.5"
+  },
+  "tightenedCapApprovalRejection": {
+    "kind": "eth_call from actual funding parent, no broadcast/no gas charge",
+    "reason": "Transaction cap exceeded",
+    "denialCode": 6,
+    "revertData": "0x3b3fd51b0000000000000000000000000000000000000000000000000000000000000006",
+    "before": {
+      "block": 70409063,
+      "streamId": "1",
+      "active": true,
+      "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+      "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+      "escrowUnits": "99000000",
+      "earnedUnits": "15000000",
+      "pendingRequestIds": [
+        "1"
+      ],
+      "tokenBalancesUnits": {
+        "parent": "9900000000",
+        "student": "0",
+        "groceriesRecipient": "1000000",
+        "technologyRecipient": "0",
+        "blockedRecipient": "0"
+      },
+      "policy": {
+        "globalCapUnits": "8000000",
+        "approvalThresholdUnits": "5000000",
+        "weeklyLimitUnits": "100000000"
+      },
+      "escrowAUSD": "99.0",
+      "earnedAUSD": "15.0"
+    },
+    "after": {
+      "block": 70409064,
+      "streamId": "1",
+      "active": true,
+      "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+      "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+      "escrowUnits": "99000000",
+      "earnedUnits": "15000000",
+      "pendingRequestIds": [
+        "1"
+      ],
+      "tokenBalancesUnits": {
+        "parent": "9900000000",
+        "student": "0",
+        "groceriesRecipient": "1000000",
+        "technologyRecipient": "0",
+        "blockedRecipient": "0"
+      },
+      "policy": {
+        "globalCapUnits": "8000000",
+        "approvalThresholdUnits": "5000000",
+        "weeklyLimitUnits": "100000000"
+      },
+      "escrowAUSD": "99.0",
+      "earnedAUSD": "15.0"
+    },
+    "balancesUnchanged": true,
+    "requestRemainedPending": true
+  },
+  "afterApprovedException": {
+    "block": 70409093,
+    "streamId": "1",
+    "active": true,
+    "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+    "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+    "escrowUnits": "89000000",
+    "earnedUnits": "9500000",
+    "pendingRequestIds": [],
+    "tokenBalancesUnits": {
+      "parent": "9900000000",
+      "student": "0",
+      "groceriesRecipient": "1000000",
+      "technologyRecipient": "10000000",
+      "blockedRecipient": "0"
+    },
+    "policy": {
+      "globalCapUnits": "20000000",
+      "approvalThresholdUnits": "5000000",
+      "weeklyLimitUnits": "100000000"
+    },
+    "escrowAUSD": "89.0",
+    "earnedAUSD": "9.5"
+  },
+  "blockedRecipientExecutionRejection": {
+    "kind": "eth_call from actual stream student, no broadcast/no gas charge",
+    "reason": "Recipient is blocked",
+    "denialCode": 5,
+    "revertData": "0x3b3fd51b0000000000000000000000000000000000000000000000000000000000000005",
+    "before": {
+      "block": 70409100,
+      "streamId": "1",
+      "active": true,
+      "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+      "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+      "escrowUnits": "89000000",
+      "earnedUnits": "10500000",
+      "pendingRequestIds": [],
+      "tokenBalancesUnits": {
+        "parent": "9900000000",
+        "student": "0",
+        "groceriesRecipient": "1000000",
+        "technologyRecipient": "10000000",
+        "blockedRecipient": "0"
+      },
+      "policy": {
+        "globalCapUnits": "20000000",
+        "approvalThresholdUnits": "5000000",
+        "weeklyLimitUnits": "100000000"
+      },
+      "escrowAUSD": "89.0",
+      "earnedAUSD": "10.5"
+    },
+    "after": {
+      "block": 70409102,
+      "streamId": "1",
+      "active": true,
+      "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+      "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+      "escrowUnits": "89000000",
+      "earnedUnits": "11000000",
+      "pendingRequestIds": [],
+      "tokenBalancesUnits": {
+        "parent": "9900000000",
+        "student": "0",
+        "groceriesRecipient": "1000000",
+        "technologyRecipient": "10000000",
+        "blockedRecipient": "0"
+      },
+      "policy": {
+        "globalCapUnits": "20000000",
+        "approvalThresholdUnits": "5000000",
+        "weeklyLimitUnits": "100000000"
+      },
+      "escrowAUSD": "89.0",
+      "earnedAUSD": "11.0"
+    },
+    "balancesUnchanged": true
+  },
+  "finalState": {
+    "block": 70409103,
+    "streamId": "1",
+    "active": true,
+    "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+    "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+    "escrowUnits": "89000000",
+    "earnedUnits": "11000000",
+    "pendingRequestIds": [],
+    "tokenBalancesUnits": {
+      "parent": "9900000000",
+      "student": "0",
+      "groceriesRecipient": "1000000",
+      "technologyRecipient": "10000000",
+      "blockedRecipient": "0"
+    },
+    "policy": {
+      "globalCapUnits": "20000000",
+      "approvalThresholdUnits": "5000000",
+      "weeklyLimitUnits": "100000000"
+    },
+    "escrowAUSD": "89.0",
+    "earnedAUSD": "11.0"
+  },
+  "nativeTestBalancesWei": {
+    "parent": "228955558000000000",
+    "student": "65527578000000000"
+  },
+  "completedAt": "2026-10-12T13:26:48.924Z",
+  "validatedInvariants": {
+    "checkedAt": "2026-10-12T13:31:56.186Z",
+    "normalPaymentTransferredExactlyOneAUSD": true,
+    "queueDidNotDebitFunds": true,
+    "tightenedCapApprovalStayedPendingWithoutDebit": true,
+    "approvedExceptionTransferredExactlyTenAUSD": true,
+    "approvedRequestNoLongerPending": true,
+    "blockedSimulationChangedNoTokenBalances": true,
+    "replayReadOnlyError": "RequestAlreadyExecuted",
+    "chainId": 10143
+  }
+}

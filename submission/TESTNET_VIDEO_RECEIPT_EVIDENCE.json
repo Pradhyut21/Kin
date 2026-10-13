@@ -1,0 +1,219 @@
+{
+  "checkedAt": "2026-10-12T13:40:11.500Z",
+  "chainId": 10143,
+  "source": "Real local browser lab recording through a labeled disposable project TEST wallet bridge; no extension/passkey/production authentication claim.",
+  "transactions": [
+    {
+      "submittedAt": "2026-10-12T13:28:43.027Z",
+      "chainId": 10143,
+      "role": "student",
+      "method": "executeSpend",
+      "to": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+      "hash": "0x7cefcad4b6c5be060e3d837d49fe0e70bb685a0ee807d082a328f413b9dfc680",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0x7cefcad4b6c5be060e3d837d49fe0e70bb685a0ee807d082a328f413b9dfc680",
+      "block": 70409485,
+      "actualFrom": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+      "actualTo": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+      "actualStatus": 1,
+      "actualChainId": 10143,
+      "actualBlock": 70409485,
+      "events": [
+        {
+          "address": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC",
+          "name": "Transfer",
+          "args": {
+            "from": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+            "to": "0xb8ECd04CE88e0D4314BFd5a7a5bA1AD21496a320",
+            "value": "1000000"
+          }
+        },
+        {
+          "address": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+          "name": "Withdrawn",
+          "args": {
+            "streamId": "1",
+            "to": "0xb8ECd04CE88e0D4314BFd5a7a5bA1AD21496a320",
+            "amount": "1000000"
+          }
+        },
+        {
+          "address": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+          "name": "SpendExecuted",
+          "args": {
+            "streamId": "1",
+            "recipient": "0xb8ECd04CE88e0D4314BFd5a7a5bA1AD21496a320",
+            "amount": "1000000",
+            "category": "0xf270363bebe15cde7989eae53baaf2beb87eec9f709fec4bf3733cebef64a81c",
+            "memo": "Kin recorded testnet direct payment"
+          }
+        }
+      ]
+    },
+    {
+      "submittedAt": "2026-10-12T13:36:51.767Z",
+      "chainId": 10143,
+      "role": "student",
+      "method": "executeSpend",
+      "to": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+      "hash": "0xea1b92088740a890395f83c38786e372563fd8a283da476b97f5ec795f179162",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0xea1b92088740a890395f83c38786e372563fd8a283da476b97f5ec795f179162",
+      "block": 70411104,
+      "actualFrom": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+      "actualTo": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+      "actualStatus": 1,
+      "actualChainId": 10143,
+      "actualBlock": 70411104,
+      "events": [
+        {
+          "address": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC",
+          "name": "Transfer",
+          "args": {
+            "from": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+            "to": "0xb8ECd04CE88e0D4314BFd5a7a5bA1AD21496a320",
+            "value": "1000000"
+          }
+        },
+        {
+          "address": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+          "name": "Withdrawn",
+          "args": {
+            "streamId": "1",
+            "to": "0xb8ECd04CE88e0D4314BFd5a7a5bA1AD21496a320",
+            "amount": "1000000"
+          }
+        },
+        {
+          "address": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+          "name": "SpendExecuted",
+          "args": {
+            "streamId": "1",
+            "recipient": "0xb8ECd04CE88e0D4314BFd5a7a5bA1AD21496a320",
+            "amount": "1000000",
+            "category": "0xf270363bebe15cde7989eae53baaf2beb87eec9f709fec4bf3733cebef64a81c",
+            "memo": "Kin recorded testnet direct payment"
+          }
+        }
+      ]
+    },
+    {
+      "submittedAt": "2026-10-12T13:37:02.148Z",
+      "chainId": 10143,
+      "role": "student",
+      "method": "executeSpend",
+      "to": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+      "hash": "0xfb09818f6e935af484fb4f1c7cedd7a1d591bb9a1f0f8ad4019e6b763625246b",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0xfb09818f6e935af484fb4f1c7cedd7a1d591bb9a1f0f8ad4019e6b763625246b",
+      "block": 70411138,
+      "actualFrom": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+      "actualTo": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+      "actualStatus": 1,
+      "actualChainId": 10143,
+      "actualBlock": 70411138,
+      "events": [
+        {
+          "address": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF",
+          "name": "RequestCreated",
+          "args": {
+            "requestId": "2",
+            "streamId": "1",
+            "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+            "recipient": "0xa00b764779B65B119fA584e29fC03631FCCE5D2B",
+            "amount": "10000000",
+            "memo": "Kin recorded testnet approval request",
+            "expiresAt": "1791985021"
+          }
+        },
+        {
+          "address": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+          "name": "SpendQueued",
+          "args": {
+            "streamId": "1",
+            "requestId": "2",
+            "recipient": "0xa00b764779B65B119fA584e29fC03631FCCE5D2B",
+            "amount": "10000000"
+          }
+        }
+      ]
+    },
+    {
+      "submittedAt": "2026-10-12T13:37:14.189Z",
+      "chainId": 10143,
+      "role": "parent",
+      "method": "approve",
+      "to": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF",
+      "hash": "0xf7684a36416f75a7cf73631018837a7194f217e1e0a971dc09523d0de7fd6e4e",
+      "status": "confirmed",
+      "explorer": "https://testnet.monadscan.com/tx/0xf7684a36416f75a7cf73631018837a7194f217e1e0a971dc09523d0de7fd6e4e",
+      "block": 70411179,
+      "actualFrom": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+      "actualTo": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF",
+      "actualStatus": 1,
+      "actualChainId": 10143,
+      "actualBlock": 70411179,
+      "events": [
+        {
+          "address": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC",
+          "name": "Transfer",
+          "args": {
+            "from": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+            "to": "0xa00b764779B65B119fA584e29fC03631FCCE5D2B",
+            "value": "10000000"
+          }
+        },
+        {
+          "address": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+          "name": "Withdrawn",
+          "args": {
+            "streamId": "1",
+            "to": "0xa00b764779B65B119fA584e29fC03631FCCE5D2B",
+            "amount": "10000000"
+          }
+        },
+        {
+          "address": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+          "name": "SpendExecuted",
+          "args": {
+            "streamId": "1",
+            "recipient": "0xa00b764779B65B119fA584e29fC03631FCCE5D2B",
+            "amount": "10000000",
+            "category": "0xec2a3ba7de1b9ac8879c29a7c1bc21fc5012ddd26ed17ad0147ecf5d68d2b4e5",
+            "memo": "Kin recorded testnet approval request"
+          }
+        },
+        {
+          "address": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF",
+          "name": "RequestApproved",
+          "args": {
+            "requestId": "2",
+            "approvedBy": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB"
+          }
+        }
+      ]
+    }
+  ],
+  "finalState": {
+    "verifiedAtBlock": 70411769,
+    "streamId": "1",
+    "escrowAUSD": "77.0",
+    "vaultTokenBalanceAUSD": "77.0",
+    "earnedAUSD": "77.0",
+    "groceryReceivedAUSD": "3.0",
+    "technologyReceivedAUSD": "20.0",
+    "blockedReceivedAUSD": "0.0",
+    "pendingRequests": [],
+    "request2": {
+      "executed": true,
+      "approved": true
+    }
+  },
+  "recordedFlow": {
+    "directPaymentOneAUSDVerified": true,
+    "queueNoTokenTransferVerified": true,
+    "parentApprovalTransfersTenAUSDVerified": true,
+    "requestResolvedOnce": true
+  },
+  "status": "PASS"
+}

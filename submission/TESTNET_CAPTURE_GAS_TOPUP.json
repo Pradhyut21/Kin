@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-10-12T13:35:50.150Z",
+  "chainId": 10143,
+  "from": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+  "to": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+  "testMON": "0.10",
+  "purpose": "Additional gas for genuine browser recording after actual setup/first captured payment",
+  "status": "confirmed",
+  "hash": "0x3b5338830c02a16769f8e554b59bc020924896acfe610f81f5ff52c9cc7a8ccd",
+  "explorer": "https://testnet.monadscan.com/tx/0x3b5338830c02a16769f8e554b59bc020924896acfe610f81f5ff52c9cc7a8ccd",
+  "block": 70410907,
+  "gasUsed": "21000",
+  "remainingTestMON": {
+    "parent": "0.126813558",
+    "student": "0.14022148"
+  }
+}

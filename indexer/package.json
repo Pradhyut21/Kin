@@ -1,0 +1,21 @@
+{
+  "name": "kin-indexer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "codegen": "envio codegen",
+    "dev": "envio dev",
+    "validate": "node scripts/validate-config.mjs",
+    "test": "node --test test/accounting.test.mjs"
+  },
+  "dependencies": { "envio": "3.12.1" },
+  "devDependencies": { "ajv": "^8.17.1", "yaml": "^2.8.1" },
+  "overrides": {
+    "express": "^4.22.0",
+    "path-to-regexp": "^0.1.13",
+    "qs": "^6.16.0",
+    "ws": "^8.21.0",
+    "esbuild": "^0.28.1"
+  }
+}

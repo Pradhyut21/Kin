@@ -1,0 +1,41 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+# Envio v3. This chain is intentionally disabled until contracts are actually deployed.
+name: kin-indexer
+description: "Kin read-only contract event snapshots; no deployment configured"
+handlers: ./src
+address_format: lowercase
+contracts:
+  - name: StreamVault
+    events:
+      - event: "StreamCreated(uint256 indexed streamId, address indexed parent, address indexed student, address token, uint256 ratePerSecond, uint256 depositedBalance)"
+      - event: "StreamFunded(uint256 indexed streamId, uint256 amount, uint256 newBalance)"
+      - event: "Withdrawn(uint256 indexed streamId, address indexed to, uint256 amount)"
+      - event: "RateUpdated(uint256 indexed streamId, uint256 newRatePerSecond)"
+      - event: "StreamPaused(uint256 indexed streamId)"
+      - event: "StreamResumed(uint256 indexed streamId)"
+  - name: PolicyModule
+    events:
+      - event: "PolicySet(uint256 indexed streamId, uint256 globalCap, uint256 approvalThreshold)"
+      - event: "CategoryCapSet(uint256 indexed streamId, bytes32 indexed category, uint256 limit, uint256 period)"
+      - event: "AllowlistUpdated(uint256 indexed streamId, address indexed recipient, bool allowed)"
+      - event: "BlocklistUpdated(uint256 indexed streamId, address indexed recipient, bool blocked)"
+      - event: "RecipientCategorySet(uint256 indexed streamId, address indexed recipient, bytes32 indexed category)"
+      - event: "PolicyHashUpdated(uint256 indexed streamId, bytes32 hash)"
+      - event: "SpendExecuted(uint256 indexed streamId, address indexed recipient, uint256 amount, bytes32 category, string memo)"
+      - event: "SpendQueued(uint256 indexed streamId, uint256 requestId, address recipient, uint256 amount)"
+  - name: ApprovalQueue
+    events:
+      - event: "RequestCreated(uint256 indexed requestId, uint256 indexed streamId, address indexed student, address recipient, uint256 amount, string memo, uint256 expiresAt)"
+      - event: "RequestApproved(uint256 indexed requestId, address approvedBy)"
+      - event: "RequestDeclined(uint256 indexed requestId, address declinedBy)"
+chains:
+  - id: 10143
+    skip: true
+    start_block: 0
+    contracts:
+      - name: StreamVault
+        address: []
+      - name: PolicyModule
+        address: []
+      - name: ApprovalQueue
+        address: []

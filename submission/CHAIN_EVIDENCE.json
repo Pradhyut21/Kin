@@ -1,0 +1,320 @@
+{
+  "collectedAt": "2026-10-12T13:40:14.302Z",
+  "userFacingDate": "2026-10-12",
+  "scope": "Read-only local public files and public Monad testnet RPC. No signer, deployment, approvals, fund transfer, or private environment file was used.",
+  "expectedNetwork": {
+    "name": "Monad Testnet",
+    "chainId": 10143,
+    "rpc": "https://testnet-rpc.monad.xyz",
+    "explorer": "https://testnet.monadscan.com"
+  },
+  "officialToken": {
+    "address": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC",
+    "officialDeploymentSource": "https://docs.agora.finance/developer/contract-deployments",
+    "metadata": {
+      "symbol": "AUSD",
+      "decimals": 6,
+      "verifiedAtBlock": 70411777
+    }
+  },
+  "publicLocalConfiguration": {
+    "environmentFile": "frontend/.env.local",
+    "keyNames": [
+      "VITE_API_URL",
+      "VITE_STREAM_VAULT_ADDRESS",
+      "VITE_POLICY_MODULE_ADDRESS",
+      "VITE_APPROVAL_QUEUE_ADDRESS",
+      "VITE_MONAD_RPC_URL"
+    ],
+    "addresses": {
+      "VITE_STREAM_VAULT_ADDRESS": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+      "VITE_POLICY_MODULE_ADDRESS": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+      "VITE_APPROVAL_QUEUE_ADDRESS": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF"
+    },
+    "missing": []
+  },
+  "deployment": {
+    "manifests": [
+      "monad-testnet.json"
+    ],
+    "sourceHash": "781619fca19c2a844d51a6194fc248ce48f5b0314861887685926e2699ddd2b6",
+    "planExists": true,
+    "planMode": "read-only-plan",
+    "planReady": true,
+    "planNetworkVerified": true,
+    "planSourceHashMatchesCurrentSource": true,
+    "publicTransactionReceipts": [
+      {
+        "stage": "deploy:StreamVault",
+        "hash": "0xfc0e169c99615b66173943fe27b2263d9998f672ebb8d0ec4ed37b30633b1687",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408129,
+        "actualContractAddress": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+        "explorer": "https://testnet.monadscan.com/tx/0xfc0e169c99615b66173943fe27b2263d9998f672ebb8d0ec4ed37b30633b1687"
+      },
+      {
+        "stage": "deploy:ApprovalQueue",
+        "hash": "0xa7e3ddf36c72e643f01db4c551bf27f419d8d2be9a15a6bf80a685c28de23b35",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408136,
+        "actualContractAddress": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF",
+        "explorer": "https://testnet.monadscan.com/tx/0xa7e3ddf36c72e643f01db4c551bf27f419d8d2be9a15a6bf80a685c28de23b35"
+      },
+      {
+        "stage": "deploy:PolicyModule",
+        "hash": "0x8d93f1042860c3344a528991f4ef6519f8226d896429d6a905c85fa11816a3b0",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408143,
+        "actualContractAddress": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+        "explorer": "https://testnet.monadscan.com/tx/0x8d93f1042860c3344a528991f4ef6519f8226d896429d6a905c85fa11816a3b0"
+      },
+      {
+        "stage": "wire:queue",
+        "hash": "0xdf81288b445d4bde6d7970ebe82cd6df3072a083c98fa600c2c011746f81dbac",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408163,
+        "actualContractAddress": null,
+        "explorer": "https://testnet.monadscan.com/tx/0xdf81288b445d4bde6d7970ebe82cd6df3072a083c98fa600c2c011746f81dbac"
+      },
+      {
+        "stage": "wire:vault",
+        "hash": "0x7419c1b09ae787decdbd16cdc872d6a4347de58ef8a60a95461160f2c9841ec6",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408169,
+        "actualContractAddress": null,
+        "explorer": "https://testnet.monadscan.com/tx/0x7419c1b09ae787decdbd16cdc872d6a4347de58ef8a60a95461160f2c9841ec6"
+      }
+    ],
+    "liveReadback": {
+      "block": 70411777,
+      "codes": [
+        {
+          "name": "vault",
+          "address": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+          "codeBytes": 5971
+        },
+        {
+          "name": "policy",
+          "address": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+          "codeBytes": 6655
+        },
+        {
+          "name": "queue",
+          "address": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF",
+          "codeBytes": 5584
+        }
+      ],
+      "wiringMatches": true,
+      "supportedToken": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC",
+      "vaultModule": "0x07A3d10E739A646894855bCd68A9CB2266594034",
+      "policyVault": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+      "policyQueue": "0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF",
+      "queueVault": "0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3",
+      "queueModule": "0x07A3d10E739A646894855bCd68A9CB2266594034"
+    },
+    "manifestSourceHashMatchesCurrentSource": true,
+    "manifestComplete": true
+  },
+  "liveRpc": {
+    "reachable": true,
+    "chainId": 10143,
+    "chainMatchesExpected": true,
+    "block": 70411777,
+    "tokenCodePresent": true,
+    "tokenCodeBytes": 5937
+  },
+  "testnetDemoReady": true,
+  "actualStreamHistory": {
+    "available": true,
+    "verifiedAtBlock": 70411777,
+    "streamId": "1",
+    "parent": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+    "student": "0x1910899d62a7dBE80F07fC010C704040c156c98f",
+    "token": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC",
+    "active": true,
+    "rateUnitsPerSecond": "500000",
+    "escrowUnits": "77000000",
+    "earnedUnits": "77000000",
+    "pendingRequestIds": [],
+    "publicProofFile": "submission/REAL_TESTNET_DEMO_EVIDENCE.json",
+    "allSavedTransactionReceiptsConfirmed": true,
+    "verifiedProofReceipts": [
+      {
+        "stage": "fund-student-test-gas",
+        "hash": "0x90f770b77f4a548b3d4ba906e7d83fbef36fc36bd059dfcff86b242bd46e36ab",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408932,
+        "explorer": "https://testnet.monadscan.com/tx/0x90f770b77f4a548b3d4ba906e7d83fbef36fc36bd059dfcff86b242bd46e36ab"
+      },
+      {
+        "stage": "claim-official-test-ausd",
+        "hash": "0x44a8f364e112647b5f9fb4a600bec9dc055f641378a79a077ef1cd473db207bb",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408939,
+        "explorer": "https://testnet.monadscan.com/tx/0x44a8f364e112647b5f9fb4a600bec9dc055f641378a79a077ef1cd473db207bb"
+      },
+      {
+        "stage": "student-consents-to-parent",
+        "hash": "0x7d0a55d5f34077947ff04f4af4a34c40e46ed114e988e90db6fb44a98f6408b3",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408945,
+        "explorer": "https://testnet.monadscan.com/tx/0x7d0a55d5f34077947ff04f4af4a34c40e46ed114e988e90db6fb44a98f6408b3"
+      },
+      {
+        "stage": "approve-exact-100-test-ausd-deposit",
+        "hash": "0x3cf8c83966a46afd82de4677b63ca1e57a0278b618b4eb06808fc0037be265f0",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408951,
+        "explorer": "https://testnet.monadscan.com/tx/0x3cf8c83966a46afd82de4677b63ca1e57a0278b618b4eb06808fc0037be265f0"
+      },
+      {
+        "stage": "create-consented-100-test-ausd-stream",
+        "hash": "0x066c84228dab20852ee456954b9f2b35e718b6658377256fd06e27b8c5d66654",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408957,
+        "explorer": "https://testnet.monadscan.com/tx/0x066c84228dab20852ee456954b9f2b35e718b6658377256fd06e27b8c5d66654"
+      },
+      {
+        "stage": "set-initial-policy-cap20-threshold5-weekly100",
+        "hash": "0x6d6f819c4b4194f80b5965fca455c5ca1721abed2bf025ecfc22f521e674d37a",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408963,
+        "explorer": "https://testnet.monadscan.com/tx/0x6d6f819c4b4194f80b5965fca455c5ca1721abed2bf025ecfc22f521e674d37a"
+      },
+      {
+        "stage": "register-groceries-recipient",
+        "hash": "0x3c3d239297e78e2ed7c74b08d68b3baff5bd5d3bc5e452fb694f12a6f832528c",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408969,
+        "explorer": "https://testnet.monadscan.com/tx/0x3c3d239297e78e2ed7c74b08d68b3baff5bd5d3bc5e452fb694f12a6f832528c"
+      },
+      {
+        "stage": "register-technology-recipient",
+        "hash": "0x860767c03f2d90f0b60a5f835a2d732ec6051423117314dc996fe07abd85aa71",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408974,
+        "explorer": "https://testnet.monadscan.com/tx/0x860767c03f2d90f0b60a5f835a2d732ec6051423117314dc996fe07abd85aa71"
+      },
+      {
+        "stage": "register-blocked-example-recipient",
+        "hash": "0xe9eef3744c721458008ec39780cccdb159e4560e31ac16b007d19eb786b79437",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408980,
+        "explorer": "https://testnet.monadscan.com/tx/0xe9eef3744c721458008ec39780cccdb159e4560e31ac16b007d19eb786b79437"
+      },
+      {
+        "stage": "set-groceries-period-budget50",
+        "hash": "0xe25b0df3e1929ffc45b429a1ab5591bcde9ea47eaa24a9d001387e2f0f9c8dfd",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408986,
+        "explorer": "https://testnet.monadscan.com/tx/0xe25b0df3e1929ffc45b429a1ab5591bcde9ea47eaa24a9d001387e2f0f9c8dfd"
+      },
+      {
+        "stage": "set-technology-period-budget50",
+        "hash": "0xc72e444d2839a77e04cfb9f4402c6ba8e583a41eb999cc98b2de4a0bdc180c48",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70408992,
+        "explorer": "https://testnet.monadscan.com/tx/0xc72e444d2839a77e04cfb9f4402c6ba8e583a41eb999cc98b2de4a0bdc180c48"
+      },
+      {
+        "stage": "student-normal-spend-1-test-ausd",
+        "hash": "0x59a5e21d35854dee1b2dc727a8e81966ac18c976e88651930a8a54c7b824850d",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70409046,
+        "explorer": "https://testnet.monadscan.com/tx/0x59a5e21d35854dee1b2dc727a8e81966ac18c976e88651930a8a54c7b824850d"
+      },
+      {
+        "stage": "student-queues-10-test-ausd-exception",
+        "hash": "0x565989bef26d0e4c8f9d50ff8b0b4035791b94b58e511e315f6ae17778d0482a",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70409054,
+        "explorer": "https://testnet.monadscan.com/tx/0x565989bef26d0e4c8f9d50ff8b0b4035791b94b58e511e315f6ae17778d0482a"
+      },
+      {
+        "stage": "parent-tightens-hard-cap-to8",
+        "hash": "0xbeb8703a479e8100c2a6f0e60a7bee006a1eb69ca2b80f220b7d825444a0bea4",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70409061,
+        "explorer": "https://testnet.monadscan.com/tx/0xbeb8703a479e8100c2a6f0e60a7bee006a1eb69ca2b80f220b7d825444a0bea4"
+      },
+      {
+        "stage": "parent-restores-hard-cap-to20",
+        "hash": "0x61a2cb57e5ad49312a9715e7645b1ca810a576c8c6fd989e54b2f237c45039e4",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70409071,
+        "explorer": "https://testnet.monadscan.com/tx/0x61a2cb57e5ad49312a9715e7645b1ca810a576c8c6fd989e54b2f237c45039e4"
+      },
+      {
+        "stage": "parent-approves-and-executes-10-test-ausd",
+        "hash": "0x44c64b738dfd3ea74b1483d281a1efcdf3b44ca21a935a71227c0c1aa188d44d",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70409078,
+        "explorer": "https://testnet.monadscan.com/tx/0x44c64b738dfd3ea74b1483d281a1efcdf3b44ca21a935a71227c0c1aa188d44d"
+      },
+      {
+        "stage": "parent-blocks-example-recipient",
+        "hash": "0x47315b731fa7563bdb77570864994dd9476ebac2f8b2b4db9591aad4f9d0d5f8",
+        "actualReceiptStatus": 1,
+        "actualBlock": 70409099,
+        "explorer": "https://testnet.monadscan.com/tx/0x47315b731fa7563bdb77570864994dd9476ebac2f8b2b4db9591aad4f9d0d5f8"
+      }
+    ],
+    "denialEvidenceKinds": {
+      "tightenedCapApproval": "eth_call from actual funding parent, no broadcast/no gas charge",
+      "blockedRecipientExecution": "eth_call from actual stream student, no broadcast/no gas charge"
+    }
+  },
+  "existingCaptureFiles": [
+    {
+      "path": "frontend/artifacts/kin-overview-desktop.png",
+      "type": "still image",
+      "chainEvidence": false
+    },
+    {
+      "path": "frontend/artifacts/kin-overview-mobile-screen.png",
+      "type": "still image",
+      "chainEvidence": false
+    },
+    {
+      "path": "frontend/artifacts/kin-overview-mobile.png",
+      "type": "still image",
+      "chainEvidence": false
+    },
+    {
+      "path": "frontend/artifacts/kin-parent-approval.png",
+      "type": "still image",
+      "chainEvidence": false
+    },
+    {
+      "path": "frontend/artifacts/kin-payment-receipt.png",
+      "type": "still image",
+      "chainEvidence": false
+    },
+    {
+      "path": "frontend/artifacts/kin-testnet-disabled.png",
+      "type": "still image",
+      "chainEvidence": false
+    }
+  ],
+  "demoDisclosure": "The consumer interface uses local sample credits. Its ledger entries are not token transfers or Monad transaction receipts.",
+  "usableProductSequence": [
+    "Show the actual consumer app allowance and spendable balance; explicitly identify sample credits.",
+    "Review an everyday purchase; confirm it and show the resulting local receipt.",
+    "Review a larger purchase; send an exception request, switch to the parent demo role, and approve it.",
+    "Show a blocked recipient or tightened hard cap and the unchanged balance.",
+    "Connect the separate Monad lab, verify real deployed code and wiring, read the funded stream, and show actual payment/approval receipts. Keep test assets distinct from consumer sample credits."
+  ],
+  "blockers": [],
+  "requiredEvidenceBeforeClaimingMonadExecution": [
+    "Public vault/policy/queue addresses on Monad chain 10143 (or an implemented and verified Monad Mainnet deployment).",
+    "Successful deployment/wiring receipts and readback of supported token and dependencies.",
+    "A consented and funded family stream, configured spending policy, and registered recipients.",
+    "Confirmed student payment, queued exception and parent approval receipts; an actual eth_call hard-denial result from the contract.",
+    "Record the working browser lab with actual wallet transactions/receipts and public explorer links."
+  ],
+  "submissionRemaining": [
+    "Record/include the genuine running Monad lab footage in the final hosted demo.",
+    "Provide public product/source links and hosted demo/pitch URLs.",
+    "Confirm sponsor questions before selecting an optional bounty."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "chainId": 10143,
+  "purpose": "Disposable project-specific Monad Testnet wallets. No personal wallet reused.",
+  "privateStorage": "contracts/.private/test-wallets.json (ignored; do not share)",
+  "wallets": [
+    {
+      "role": "parent",
+      "address": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB"
+    },
+    {
+      "role": "student",
+      "address": "0x1910899d62a7dBE80F07fC010C704040c156c98f"
+    },
+    {
+      "role": "groceriesRecipient",
+      "address": "0xb8ECd04CE88e0D4314BFd5a7a5bA1AD21496a320"
+    },
+    {
+      "role": "technologyRecipient",
+      "address": "0xa00b764779B65B119fA584e29fC03631FCCE5D2B"
+    },
+    {
+      "role": "blockedRecipient",
+      "address": "0xcF2fD4BcA712148AE112434f34E3c4Bf957D464B"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+type Stream {
+  id: ID!
+  vault: String!
+  streamId: BigInt!
+  parent: String!
+  student: String!
+  token: String!
+  ratePerSecond: BigInt!
+  depositedBalance: BigInt!
+  accruedBalance: BigInt!
+  startTime: BigInt!
+  lastWithdrawn: BigInt!
+  active: Boolean!
+  createdAt: BigInt!
+  lastEventTimestamp: BigInt!
+  lastEventBlock: BigInt!
+}
+
+type StreamFunded {
+  id: ID!
+  streamId: BigInt!
+  amount: BigInt!
+  newBalance: BigInt!
+  timestamp: BigInt!
+}
+
+type SpendEvent {
+  id: ID!
+  streamId: BigInt!
+  recipient: String!
+  amount: BigInt!
+  category: String!
+  memo: String!
+  timestamp: BigInt!
+}
+
+type ApprovalRequest {
+  id: ID!
+  requestId: BigInt!
+  streamId: BigInt!
+  student: String!
+  recipient: String!
+  amount: BigInt!
+  memo: String!
+  expiresAt: BigInt!
+  status: String!  # pending | approved | declined; pending must also be checked against expiresAt
+  createdAt: BigInt!
+  resolvedAt: BigInt
+}
+
+type PolicyUpdate {
+  id: ID!
+  streamId: BigInt!
+  globalCap: BigInt!
+  approvalThreshold: BigInt!
+  timestamp: BigInt!
+}
+
+type PolicyEvent {
+  id: ID!
+  streamId: BigInt!
+  kind: String!
+  value: String!
+  timestamp: BigInt!
+}

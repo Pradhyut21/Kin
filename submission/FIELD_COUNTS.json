@@ -1,0 +1,145 @@
+{
+  "preparedDate": "2026-10-12",
+  "timezone": "Asia/Calcutta",
+  "countMethod": "Unicode UTF-16 code units including spaces and LF newlines, excluding field markers and surrounding headings. Current text uses BMP characters.",
+  "source": "APPLICATION_DRAFT.md",
+  "copyReadySource": "SUBMISSION_COPY_READY.txt",
+  "review": {
+    "source": "AI_JUDGE_REVIEW.md",
+    "independentAIReviewApplied": true,
+    "officialJudging": false,
+    "reviewPredatesVerifiedDeployment": true,
+    "subsequentIndependentRpcVerification": "Writer independently checked 5 deployment/wiring receipts plus stream creation/normal spend/queue/approval statuses, recipient balances, escrow and pinned-block denial calls."
+  },
+  "fields": {
+    "project_name": {
+      "formLabel": "PROJECT NAME",
+      "characters": 27,
+      "words": 5,
+      "maximumCharacters": 120,
+      "withinLimit": true,
+      "containsPlaceholders": false
+    },
+    "tagline": {
+      "formLabel": "ONE LINE DESCRIPTION",
+      "characters": 158,
+      "words": 25,
+      "maximumCharacters": 200,
+      "withinLimit": true,
+      "containsPlaceholders": false
+    },
+    "product_description": {
+      "formLabel": "DESCRIPTION",
+      "characters": 4199,
+      "words": 614,
+      "maximumCharacters": 8000,
+      "withinLimit": true,
+      "containsPlaceholders": false
+    },
+    "go_to_market": {
+      "formLabel": "GO TO MARKET AND USER ACQUISITION STRATEGY",
+      "characters": 3452,
+      "words": 494,
+      "maximumCharacters": 8000,
+      "withinLimit": true,
+      "containsPlaceholders": false
+    },
+    "judge_instructions": {
+      "formLabel": "JUDGE INSTRUCTIONS",
+      "characters": 6437,
+      "words": 837,
+      "maximumCharacters": 8000,
+      "withinLimit": true,
+      "containsPlaceholders": false
+    },
+    "github_repo": {
+      "formLabel": "GITHUB REPO",
+      "characters": 68,
+      "words": 11,
+      "maximumCharacters": null,
+      "withinLimit": null,
+      "containsPlaceholders": true
+    },
+    "live_project_link": {
+      "formLabel": "LIVE PROJECT LINK",
+      "characters": 35,
+      "words": 6,
+      "maximumCharacters": null,
+      "withinLimit": null,
+      "containsPlaceholders": true
+    },
+    "technical_demo_video": {
+      "formLabel": "TECHNICAL DEMO VIDEO",
+      "characters": 49,
+      "words": 7,
+      "maximumCharacters": null,
+      "withinLimit": null,
+      "containsPlaceholders": true
+    },
+    "pitch_video": {
+      "formLabel": "PITCH VIDEO",
+      "characters": 39,
+      "words": 7,
+      "maximumCharacters": null,
+      "withinLimit": null,
+      "containsPlaceholders": true
+    },
+    "sponsor_bounty": {
+      "formLabel": "SPONSOR BOUNTY",
+      "characters": 68,
+      "words": 9,
+      "maximumCharacters": null,
+      "withinLimit": null,
+      "containsPlaceholders": false
+    },
+    "pitch_voice_body": {
+      "formLabel": "PITCH NARRATION BODY",
+      "characters": 1314,
+      "words": 205,
+      "maximumCharacters": null,
+      "withinLimit": null,
+      "containsPlaceholders": false
+    },
+    "pitch_script": {
+      "formLabel": "EDITABLE PITCH SCRIPT",
+      "characters": 1314,
+      "words": 205,
+      "maximumCharacters": null,
+      "withinLimit": null,
+      "containsPlaceholders": false
+    }
+  },
+  "narration": {
+    "source": "NARRATION_DRAFT.md",
+    "characters": 2362,
+    "words": 352,
+    "targetSeconds": 179,
+    "maximumSeconds": 180,
+    "actualRenderedDurationVerified": false
+  },
+  "pitch": {
+    "voiceScenesSource": "D:/SAANS/deliverables/brag-output-2026-10-11-182558/kin-metropolis-2026-10-12/pitch-narration-scenes.json",
+    "words": 205,
+    "targetSeconds": 87,
+    "maximumSeconds": 120,
+    "generatedNarration": true,
+    "actualRenderedDurationVerified": false,
+    "voiceSceneAllocatedSeconds": 110,
+    "compositionMetadataSource": "D:/SAANS/deliverables/brag-output-2026-10-11-182558/kin-metropolis-2026-10-12/composition-build.json"
+  },
+  "readiness": {
+    "monadDeployed": true,
+    "publicTransactionEvidence": true,
+    "realStreamId": "1",
+    "normalSpendTestAUSD": "1",
+    "approvedExceptionTestAUSD": "10",
+    "hardDenialEvidenceKind": "Read-only eth_call RPC simulations, not broadcast failed transactions",
+    "sponsorBountyClaimed": false,
+    "finalApplicationReady": false,
+    "remaining": [
+      "Actual repository/public app/hosted demo and pitch URLs",
+      "Final applicant review of pitch introduction/product rationale",
+      "Final video duration and footage verification"
+    ]
+  }
+}

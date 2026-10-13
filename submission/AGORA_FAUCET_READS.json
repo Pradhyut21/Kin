@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-12T12:51:16.267Z",
+  "scope": "Only eth_chainId, eth_blockNumber, eth_getCode and eth_call. No funds requested onchain, no wallet created, no signer used.",
+  "chainId": 10143,
+  "address": "0xd236c18D274E54FAccC3dd9DDA4b27965a73ee6C",
+  "rpc": "https://testnet-rpc.monad.xyz",
+  "abiSource": "https://github.com/agora-finance/stable-swap-examples/blob/main/src/generated/abis.ts",
+  "deploymentSource": "https://docs.agora.finance/developer/contract-deployments",
+  "requestGuide": "https://docs.agora.finance/instant-settlement/guides/getting-testnet-tokens",
+  "functions": [
+    {
+      "name": "AGORA_FAUCET_STORAGE_SLOT",
+      "inputs": [],
+      "stateMutability": "view"
+    },
+    {
+      "name": "faucetDripAmount",
+      "inputs": [],
+      "stateMutability": "view"
+    },
+    {
+      "name": "initialize",
+      "inputs": [
+        "tuple"
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "lastDripTimestamp",
+      "inputs": [],
+      "stateMutability": "view"
+    },
+    {
+      "name": "maxAmountToOwn",
+      "inputs": [],
+      "stateMutability": "view"
+    },
+    {
+      "name": "maxDripFrequency",
+      "inputs": [],
+      "stateMutability": "view"
+    },
+    {
+      "name": "requestFunds",
+      "inputs": [
+        "address"
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "name": "token",
+      "inputs": [],
+      "stateMutability": "view"
+    }
+  ],
+  "reads": {
+    "faucetDripAmount": "10000000000",
+    "maxAmountToOwn": "100000000000",
+    "maxDripFrequency": "60",
+    "lastDripTimestamp": "1791807465",
+    "token": "0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC"
+  },
+  "block": 70402048,
+  "codeBytes": 1200,
+  "latestTimestamp": 1791809476,
+  "dripAUSD": "10000.0",
+  "maximumAUSD": "100000.0",
+  "requestSimulation": {
+    "success": true,
+    "receiver": "0x0000000000000000000000000000000000000001",
+    "note": "eth_call discarded all simulated state changes; no tokens were received."
+  }
+}

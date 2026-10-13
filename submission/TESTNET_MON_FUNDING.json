@@ -1,0 +1,35 @@
+{
+  "requestedAt": "2026-10-12T12:55:21.745Z",
+  "chainId": 10143,
+  "recipient": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+  "purpose": "Receive free test MON for disposable Kin development; no signing, deployment or payment action.",
+  "endpoint": "https://agents.devnads.com/v1/faucet",
+  "operatorDocumentation": "https://gist.github.com/portdeveloper/e1e50a8044ba6b1b0232b2426d00c719",
+  "secondOperatorGuide": "https://gist.github.com/portdeveloper/8a382b3f234381a75b1d8686a6329212",
+  "requestContainsOnly": [
+    "chainId",
+    "address"
+  ],
+  "status": "confirmed-testnet-mon-received",
+  "attemptCount": 1,
+  "httpStatus": 200,
+  "apiResult": {
+    "txHash": "0x408d809fef3c0f48562a0108230aab6447453405195e8b9dff0902597fc1be51",
+    "amount": "1000000000000000000",
+    "chain": "Monad Testnet"
+  },
+  "transaction": {
+    "hash": "0x408d809fef3c0f48562a0108230aab6447453405195e8b9dff0902597fc1be51",
+    "to": "0xBB67922989dDD55b99d190CD552FCcb9b0aa6bEB",
+    "valueWei": "1000000000000000000",
+    "chainId": 10143,
+    "block": 70402861,
+    "status": 1,
+    "explorer": "https://testnet.monadscan.com/tx/0x408d809fef3c0f48562a0108230aab6447453405195e8b9dff0902597fc1be51"
+  },
+  "publicBalance": {
+    "wei": "1000000000000000000",
+    "testMON": "1.0",
+    "checkedAtBlock": 70402866
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "kin-metropolis",
+  "version": "0.2.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "setup": "npm --prefix frontend ci && npm --prefix backend ci && npm --prefix contracts ci",
+    "setup:indexer": "npm --prefix indexer ci",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build && npm --prefix backend run build",
+    "check": "npm --prefix frontend run build && npm --prefix frontend test && npm --prefix backend run build && npm --prefix backend test && npm --prefix contracts test && npm --prefix indexer test",
+    "check:indexer": "npm --prefix indexer run validate && npm --prefix indexer test",
+    "test:browser": "npm --prefix frontend run test:browser",
+    "test:contracts": "npm --prefix contracts test",
+    "dev:backend": "npm --prefix backend run dev"
+  }
+}
