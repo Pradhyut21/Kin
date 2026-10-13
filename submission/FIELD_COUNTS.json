@@ -1,5 +1,5 @@
 {
-  "preparedDate": "2026-10-12",
+  "preparedDate": "2026-10-13",
   "timezone": "Asia/Calcutta",
   "countMethod": "Unicode UTF-16 code units including spaces and LF newlines, excluding field markers and surrounding headings. Current text uses BMP characters.",
   "source": "APPLICATION_DRAFT.md",
@@ -30,8 +30,8 @@
     },
     "product_description": {
       "formLabel": "DESCRIPTION",
-      "characters": 4199,
-      "words": 614,
+      "characters": 4159,
+      "words": 607,
       "maximumCharacters": 8000,
       "withinLimit": true,
       "containsPlaceholders": false
@@ -46,43 +46,43 @@
     },
     "judge_instructions": {
       "formLabel": "JUDGE INSTRUCTIONS",
-      "characters": 6437,
-      "words": 837,
+      "characters": 5095,
+      "words": 651,
       "maximumCharacters": 8000,
       "withinLimit": true,
       "containsPlaceholders": false
     },
     "github_repo": {
       "formLabel": "GITHUB REPO",
-      "characters": 68,
-      "words": 11,
+      "characters": 33,
+      "words": 1,
       "maximumCharacters": null,
       "withinLimit": null,
-      "containsPlaceholders": true
+      "containsPlaceholders": false
     },
     "live_project_link": {
       "formLabel": "LIVE PROJECT LINK",
-      "characters": 35,
-      "words": 6,
+      "characters": 54,
+      "words": 1,
       "maximumCharacters": null,
       "withinLimit": null,
-      "containsPlaceholders": true
+      "containsPlaceholders": false
     },
     "technical_demo_video": {
       "formLabel": "TECHNICAL DEMO VIDEO",
-      "characters": 49,
-      "words": 7,
+      "characters": 63,
+      "words": 1,
       "maximumCharacters": null,
       "withinLimit": null,
-      "containsPlaceholders": true
+      "containsPlaceholders": false
     },
     "pitch_video": {
       "formLabel": "PITCH VIDEO",
-      "characters": 39,
-      "words": 7,
+      "characters": 64,
+      "words": 1,
       "maximumCharacters": null,
       "withinLimit": null,
-      "containsPlaceholders": true
+      "containsPlaceholders": false
     },
     "sponsor_bounty": {
       "formLabel": "SPONSOR BOUNTY",
@@ -115,7 +115,8 @@
     "words": 352,
     "targetSeconds": 179,
     "maximumSeconds": 180,
-    "actualRenderedDurationVerified": false
+    "actualRenderedDurationVerified": true,
+    "actualRenderedSeconds": 179
   },
   "pitch": {
     "voiceScenesSource": "D:/SAANS/deliverables/brag-output-2026-10-11-182558/kin-metropolis-2026-10-12/pitch-narration-scenes.json",
@@ -123,9 +124,10 @@
     "targetSeconds": 87,
     "maximumSeconds": 120,
     "generatedNarration": true,
-    "actualRenderedDurationVerified": false,
+    "actualRenderedDurationVerified": true,
     "voiceSceneAllocatedSeconds": 110,
-    "compositionMetadataSource": "D:/SAANS/deliverables/brag-output-2026-10-11-182558/kin-metropolis-2026-10-12/composition-build.json"
+    "compositionMetadataSource": "D:/SAANS/deliverables/brag-output-2026-10-11-182558/kin-metropolis-2026-10-12/composition-build.json",
+    "actualRenderedSeconds": 87
   },
   "readiness": {
     "monadDeployed": true,
@@ -135,11 +137,19 @@
     "approvedExceptionTestAUSD": "10",
     "hardDenialEvidenceKind": "Read-only eth_call RPC simulations, not broadcast failed transactions",
     "sponsorBountyClaimed": false,
-    "finalApplicationReady": false,
-    "remaining": [
-      "Actual repository/public app/hosted demo and pitch URLs",
-      "Final applicant review of pitch introduction/product rationale",
-      "Final video duration and footage verification"
+    "finalApplicationReady": true,
+    "publicRepositoryVerified": true,
+    "publicSiteNativeDeploymentSucceeded": true,
+    "publicLinks": {
+      "repository": "https://github.com/Pradhyut21/Kin",
+      "app": "https://kin-metropolis-2026.vividdaisy16.chatgpt.site/",
+      "demo": "https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html",
+      "pitch": "https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html",
+      "testnetLab": "https://kin-metropolis-2026.vividdaisy16.chatgpt.site/#/testnet"
+    },
+    "manualApplicantActions": [
+      "Review team and visibility/organizer-showcase choices",
+      "Complete platform checkboxes and submit through own account"
     ]
   }
 }

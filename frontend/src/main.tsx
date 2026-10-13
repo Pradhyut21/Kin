@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import { AppShell } from './components/AppShell'
 import { OnboardingPage } from './pages/OnboardingPage'
@@ -15,7 +15,7 @@ const TestnetPage = lazy(() => import('./pages/TestnetPage').then((module) => ({
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter><DemoProvider>
+    <HashRouter><DemoProvider>
       <Routes>
         <Route path="/onboarding" element={<OnboardingPage />} />
         <Route element={<AppShell />}>
@@ -29,6 +29,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         </Route>
         <Route path="*" element={<OnboardingPage />} />
       </Routes>
-    </DemoProvider></BrowserRouter>
+    </DemoProvider></HashRouter>
   </React.StrictMode>
 )

@@ -1,16 +1,16 @@
-# Kin — Metropolis application draft
+# Kin — final Metropolis application copy
 
-Prepared from the current repository on 12 October 2026. The field names below match the applicant's form. Copy only the body between each field's START and END markers. Character counts are in FIELD_COUNTS.json.
+Prepared 13 October 2026. All application fields below contain verified public links and remain within their stated limits. Primary track: Consumer Products & Payments. No sponsor bounty is claimed. Copy only the body between a field's START and END markers, or use SUBMISSION_COPY_READY.txt without markers.
 
-The three core contracts are deployed and wired on Monad Testnet. Public-RPC checks confirm deployment receipts, a consented funded stream, a normal payment and an approved exception. Hard-denial evidence uses read-only execution calls, not broadcast failed transactions. Keep the sample-money consumer walkthrough separate from genuine testnet transfers. Actual repository, public app and hosted video URLs still require final links.
+The public Site deployment succeeded. The technical demo is 179 seconds and the pitch is 87 seconds; both final renders passed verification. The consumer sample-credit flow and genuine Monad Testnet lab are distinct. No application submission or organizer email was performed.
 
-## Project name — maximum 120 characters
+## PROJECT NAME — maximum 120 characters
 
 <!-- FIELD:project_name START -->
 Kin — money with guardrails
 <!-- FIELD:project_name END -->
 
-## One-line description — maximum 200 characters
+## ONE LINE DESCRIPTION — maximum 200 characters
 
 <!-- FIELD:tagline START -->
 A family allowance for life apart: money unlocks over time, everyday spending follows clear rules, and bigger plans ask a parent. Hard boundaries stay intact.
@@ -41,7 +41,7 @@ Onchain enforcement makes escrow, earned entitlement and exception rules indepen
 
 Plain language reduces typing while preserving review. The embedded demo parser is deterministic. The optional backend language-model path produces untrusted proposals only; it has no signing keys and cannot execute payments or change rules.
 
-Current build: a working responsive consumer prototype with labeled sample funds, deployed and wired Monad Testnet contracts, and a separate wallet-based lab. Disposable test wallets created a consented 100 test AUSD stream, completed a 1 test AUSD payment and queued/approved a 10 test AUSD exception. Confirmed receipts and recipient balances establish those transfers. At a tightened 8 test AUSD cap, a read-only approval call rejected the pending 10 test AUSD request; restoring the cap allowed actual execution. A blocked-recipient call also rejected. These denials were RPC simulations, not broadcast failed transactions. Consumer sample receipts and genuine testnet receipts remain separate.
+Working now: the public consumer prototype uses labeled sample credits, and a separate wallet-based lab connects to deployed Monad Testnet contracts. The recorded real lab completed a 1 test AUSD payment, queued a 10 test AUSD request without a transfer, and executed the parent's approval. Confirmed receipts, events and recipient balances establish those transfers. A separate setup funded a consented 100 test AUSD stream and checked hard denials through read-only RPC calls. The tightened-cap and blocked-recipient rejection proofs are simulations, not broadcast failed transactions. Consumer sample receipts and genuine testnet receipts remain separate.
 
 Our primary track is Consumer Products & Payments. Streaming and spending limits already exist; Kin's contribution is an explainable payment, exception and denial loop that demonstrates exactly what parent approval can authorize. Our proposed first pilot pairs adult students and funding parents using registered receiving wallets, then tests whether both people understand the rules and choose to use the flow again.
 <!-- FIELD:product_description END -->
@@ -70,77 +70,81 @@ Keep basic allowance setup and transparent rules free during the pilot. Later, t
 The first go-to-market milestone is a family completing the payment/exception/denial flow and correctly explaining all three outcomes. The next is choosing to use it again. Our positioning is everyday independence within transparent boundaries, with every exception understandable to the person asking and the person approving.
 <!-- FIELD:go_to_market END -->
 
+## GITHUB REPO
+
+<!-- FIELD:github_repo START -->
+https://github.com/Pradhyut21/Kin
+<!-- FIELD:github_repo END -->
+
+## LIVE PROJECT LINK
+
+<!-- FIELD:live_project_link START -->
+https://kin-metropolis-2026.vividdaisy16.chatgpt.site/
+<!-- FIELD:live_project_link END -->
+
+## TECHNICAL DEMO VIDEO — 179 seconds
+
+<!-- FIELD:technical_demo_video START -->
+https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html
+<!-- FIELD:technical_demo_video END -->
+
+## PITCH VIDEO — 87 seconds
+
+<!-- FIELD:pitch_video START -->
+https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html
+<!-- FIELD:pitch_video END -->
+
 ## JUDGE INSTRUCTIONS — maximum 8,000 characters
 
 <!-- FIELD:judge_instructions START -->
 Primary track: Consumer Products & Payments.
+Sponsor bounties: none currently claimed.
 
-Current execution status: the consumer walkthrough uses sample credits; no real money moves in that flow. Three core contracts are deployed and wired on Monad Testnet, chain 10143. A consented 100 test AUSD stream, a 1 test AUSD normal payment and a 10 test AUSD queued/approved exception have confirmed receipts. Public-RPC checks independently reproduced code/token/wiring, successful transaction statuses, recipient balances and the hard-denial results. The real flow uses disposable project-specific test wallets. Keep sample receipts separate from genuine testnet receipts.
+Live product: https://kin-metropolis-2026.vividdaisy16.chatgpt.site/
+Separate testnet lab: https://kin-metropolis-2026.vividdaisy16.chatgpt.site/#/testnet
+Technical demo: https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html — 179 seconds.
+Pitch: https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html — 87 seconds.
+Public source: https://github.com/Pradhyut21/Kin
 
-Consumer walkthrough — approximately two minutes:
+Start with the consumer walkthrough. It requires no wallet or API keys and uses clearly labeled sample credits. The Priya/Mom role switch illustrates two family perspectives; it is not authentication. Use “Reset demo” if returning to a previously used browser state.
 
-1. Open the app and choose “Explore demo” if the onboarding screen appears. Select Priya's demo view. On Overview, see available credits separately from the reserve. Use “Reset demo” if returning to a previously used browser state.
+1. On Overview, choose “The everyday shop.” Review the Tesco $28.60 sample payment and confirm. Inspect the checks, sample receipt and exact debit in Activity. Retailer names illustrate registered recipients and do not establish merchant integrations.
 
-2. Choose “The everyday shop.” Review the Tesco $28.60 sample payment, then confirm. Inspect the decision checks, available-balance change and sample receipt in Activity. Tesco is an illustrative registered recipient, not an integrated retailer.
+2. Return to Overview and choose “A bigger little purchase.” Review the Apple $249 sample request and select “Ask Mom.” The request stays pending with no debit. Switch to Mom, open Family rules, and lower the per-payment cap to $200.
 
-3. Return to Overview and choose “A bigger little purchase.” Review the Apple $249 sample purchase and select “Ask Mom.” Confirm that the pending request has not debited funds. Switch the visible demo role to Mom. In Family rules, lower the per-payment cap to $200. Open Approvals and attempt approval: the current cap blocks it, no funds are deducted, and the request stays pending. Restore the cap to its original $1,000, then approve. The same request resolves once. Allowance accrual can raise the balance between frames; the denial causes no debit.
+3. In Approvals, attempt approval. The current hard cap rejects it without deducting credits, and the request remains pending. Restore the original $1,000 cap and approve. The request resolves once. Allowance accrual may raise the available balance between frames; the rejected approval causes no debit.
 
-4. Switch to Priya and choose “A line we don't cross.” Attempt the Lucky Spins $25 sample payment. Inspect the hard denial and absence of a debit. Parent approval cannot bypass the current blocklist or hard caps. The parent can separately change the rules.
+4. Switch to Priya and try “A line we don't cross.” The Lucky Spins $25 sample attempt is blocked. Parent approval cannot bypass the current blocklist or hard limits. The parent can separately change the rules.
 
-5. Open Family rules and Activity. The review card and receipts explain decisions. In Plain language, try “Pay Tesco $28.60” and see a proposal before confirmation. The embedded parser is deterministic; text alone never moves funds.
+5. Inspect Family rules and Activity. In Plain language, try “Pay Tesco $28.60” and review the proposal before confirming. The embedded parser is deterministic. The optional backend AI path is proposal-only and has no signing authority.
 
-The policy-change-after-queue sequence is the central boundary proof. A failing approval leaves the request pending, and the parent can still decline it. A successful resolution consumes the request once.
+The separate real Monad segment in the technical demo shows the working browser lab and genuine test-token transactions. Its recording uses a visibly labeled disposable project TEST wallet bridge. No extension confirmation modal, passkey or production authentication is claimed. Private keys stayed outside the browser; the bridge was stopped after recording and is not included in the public app.
 
-Real Monad path:
+Recorded normal 1 test AUSD transfer:
+https://testnet.monadscan.com/tx/0xea1b92088740a890395f83c38786e372563fd8a283da476b97f5ec795f179162
 
-Open Testnet lab separately. It requires a Monad testnet wallet and test AUSD. The deployed addresses are StreamVault 0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3, PolicyModule 0x07A3d10E739A646894855bCd68A9CB2266594034 and ApprovalQueue 0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF. Supported token: Agora testnet AUSD 0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC. Public deployment manifest: contracts/deployments/monad-testnet.json. The lab verifies token/wiring, onchain signer roles and confirmed receipts; local role switching is not wallet authentication.
+Recorded queued 10 test AUSD request 2, with no token transfer:
+https://testnet.monadscan.com/tx/0xfb09818f6e935af484fb4f1c7cedd7a1d591bb9a1f0f8ad4019e6b763625246b
 
-Explore the contracts on https://testnet.monadscan.com/address/0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3, https://testnet.monadscan.com/address/0x07A3d10E739A646894855bCd68A9CB2266594034 and https://testnet.monadscan.com/address/0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF.
+Recorded parent approval and 10 test AUSD execution:
+https://testnet.monadscan.com/tx/0xf7684a36416f75a7cf73631018837a7194f217e1e0a971dc09523d0de7fd6e4e
 
-Stream 1 was funded with 100 test AUSD at an accelerated 0.5 test AUSD/second rate for recording. This is a test rate, not a realistic allowance recommendation. The real setup used a 20 test AUSD cap and a 5 test AUSD approval threshold. The consumer's $249/$200 example is a separate sample scenario.
+Contracts on Monad Testnet, chain 10143:
+StreamVault 0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3
+PolicyModule 0x07A3d10E739A646894855bCd68A9CB2266594034
+ApprovalQueue 0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF
+Supported Agora test AUSD 0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC, 6 decimals.
 
-Normal 1 test AUSD payment: https://testnet.monadscan.com/tx/0x59a5e21d35854dee1b2dc727a8e81966ac18c976e88651930a8a54c7b824850d.
+The public repository preserves the five deployment/wiring receipts, 17-stage setup ledger and recorded-flow receipt/event proof. In the setup, a pending 10 test AUSD request rejected approval under an 8 test AUSD cap through eth_call, returning SpendDenied(6). Restoring the cap to 20 allowed actual approval. A blocked-recipient eth_call returned SpendDenied(5). These were read-only simulations, not failed transaction receipts.
 
-Queued 10 test AUSD exception: https://testnet.monadscan.com/tx/0x565989bef26d0e4c8f9d50ff8b0b4035791b94b58e511e315f6ae17778d0482a.
+Stream 1 was funded with 100 test AUSD at an accelerated 0.5 test AUSD/second recording rate. At block 70411769, its recorded escrow/token balance was 77 test AUSD after setup and capture transfers, with no pending requests. Later transactions may change balances. The consumer $249/$200 scenario is separate from these test-token amounts.
 
-Parent approval and 10 test AUSD execution: https://testnet.monadscan.com/tx/0x44c64b738dfd3ea74b1483d281a1efcdf3b44ca21a935a71227c0c1aa188d44d.
+To explore your own real testnet setup, open Testnet lab with an injected wallet on Monad Testnet. The student must authorize the chosen funding parent before that parent funds a new stream and registers recipients. Use test MON/test AUSD only. No wallet is needed to view the recorded receipts or complete the consumer sample walkthrough.
 
-Hard-denial proof: after the queued request, the parent set the cap to 8 test AUSD. A read-only eth_call from the funding parent's address to approve(1) returned SpendDenied(6), “Transaction cap exceeded.” The request stayed pending and token balances/escrow were unchanged. After restoring the cap to 20 test AUSD, the actual approval transaction succeeded. A separate eth_call from the student's address to a blocked recipient returned SpendDenied(5), “Recipient is blocked.” Both rejected calls were simulations with no broadcast or gas charge; they are not failed transaction receipts.
+Prototype limits: the student consents to the funding parent, who can change rules or pause accrual/spending. Earned entitlement is preserved, but unrestricted student withdrawal and refund/recovery are unimplemented. Recipient categories bind parent-registered addresses; they do not verify goods purchased or prevent misuse after funds arrive. Consumer and contract budget-reset semantics differ. No independent audit, fiat settlement, bank payout, live FX, reviewed Mera/passkey wallet or running Envio indexer is claimed. Onchain metadata is public.
 
-The 17-stage public setup ledger is submission/REAL_TESTNET_DEMO_EVIDENCE.json. At block 70409103, escrow was 89 test AUSD after the 1 and 10 test AUSD transfers. Additional captured transactions may change later balances. Neither the disposable-wallet test nor the sample-money walkthrough is a user trial or production launch.
-
-Reproduce locally with Node.js 22.18 or later: run “npm.cmd run setup” and “npm.cmd run dev” from the repository root, then open Vite's printed URL. “npm.cmd run check” builds the frontend/backend and runs local frontend, API, Solidity and indexer-accounting checks. Read README.md and SECURITY.md for setup, boundaries and deployment steps.
-
-Bounties are optional. No sponsor bounty is currently claimed. A testnet token reference does not establish Agora bounty eligibility, an indexer scaffold does not establish a working Envio integration, and the excluded raw-P256 account experiment is not Mera/WebAuthn authentication. Select a bounty only after checking its exact questions and providing a substantive working integration.
-
-Prototype limits: no independent security audit, unrestricted withdrawal, refund/recovery, fiat settlement, live FX, independently verified merchants or reviewed passkey wallet is claimed. The student consents to the chosen funding parent; that parent can change spending rules and pause the stream. Parent pause freezes both spending and accrual while retaining earned entitlement. The consumer and contract budget-reset models differ. Onchain events can expose family relationships and payment metadata. Use test funds only.
-
-Existing work and new event-period work should be described accurately. Archived conceptual documents are retained separately and are not evidence that their historical integration claims are implemented. Preserve dated implementation and validation evidence for eligibility review.
+Both videos have generated voice narration and captions. The pitch introduces Pradhyut and the product rationale without inventing teammates or personal history. The videos and source are public. This disposable-wallet test is not a user trial, and the go-to-market pilot remains a proposal.
 <!-- FIELD:judge_instructions END -->
-
-## GITHUB REPO — verified URL required
-
-<!-- FIELD:github_repo START -->
-[ADD THE ACTUAL REPOSITORY URL; PUBLIC OR SHARED WITH THE ORGANIZER]
-<!-- FIELD:github_repo END -->
-
-## LIVE PROJECT LINK — reachable URL required
-
-<!-- FIELD:live_project_link START -->
-[ADD THE ACTUAL HOSTED PRODUCT URL]
-<!-- FIELD:live_project_link END -->
-
-## TECHNICAL DEMO VIDEO — hosted video, maximum three minutes
-
-<!-- FIELD:technical_demo_video START -->
-[ADD THE ACTUAL HOSTED WORKING-PRODUCT VIDEO URL]
-<!-- FIELD:technical_demo_video END -->
-
-## PITCH VIDEO — hosted video, maximum two minutes
-
-<!-- FIELD:pitch_video START -->
-[ADD THE ACTUAL HOSTED PITCH VIDEO URL]
-<!-- FIELD:pitch_video END -->
 
 ## SPONSOR BOUNTY — optional
 
@@ -148,9 +152,7 @@ Existing work and new event-period work should be described accurately. Archived
 None currently claimed. Primary track: Consumer Products & Payments.
 <!-- FIELD:sponsor_bounty END -->
 
-## Pitch voice body — product narration introducing Pradhyut, 205 words
-
-The first name matches the verified connected GitHub profile. The motivation is a product rationale; no personal biography, team size or teammate identity is invented. A generated voice can narrate this script, with that generation disclosed. It is not a recording of the applicant's own voice. Confirm the actual rendered duration is below two minutes.
+## PITCH VOICE SCRIPT — generated narration, 205 words
 
 <!-- FIELD:pitch_voice_body START -->
 Hi, I am Pradhyut, the builder behind Kin.
@@ -174,7 +176,7 @@ Next, I want to test understanding and repeat use with adult student and funding
 The goal is a family allowance where permissions, exceptions and denials are clear.
 <!-- FIELD:pitch_voice_body END -->
 
-## Editable pitch script — ready for applicant review or personal recording
+## EDITABLE PITCH SCRIPT
 
 <!-- FIELD:pitch_script START -->
 Hi, I am Pradhyut, the builder behind Kin.
@@ -198,24 +200,8 @@ Next, I want to test understanding and repeat use with adult student and funding
 The goal is a family allowance where permissions, exceptions and denials are clear.
 <!-- FIELD:pitch_script END -->
 
-## Independent AI review questions
+## Independent AI review and applicant review
 
-An independent AI reviewer assessed the original draft. Its genuine strengths and critiques are recorded in AI_JUDGE_REVIEW.md. The revised copy incorporates its advice on current-rule enforcement, parent control and registered receiving wallets. That earlier review predates the now-verified Monad deployment and payment evidence; its deployment-gap finding describes the earlier state. This is an internal AI review, not a Metropolis judging result or independent security audit.
+The independent internal AI critique identified the current-rule recheck, one-use student consent and understandable decision receipts as concrete strengths. Its suggestions informed the revised copy and rule-change-after-queue demonstration. The original critique predates deployment; subsequent public-RPC and recorded-flow evidence resolves that earlier gap. It is not a Metropolis judging result or independent security audit.
 
-Ask reviewers to assess the actual draft, source boundaries and evidence, then incorporate useful suggestions. Seek critique and concrete improvements, not invented praise or a prediction of selection.
-
-1. As a skeptical Consumer Products & Payments judge, what is the strongest reason to shortlist this product? What is the strongest reason to reject it? Ground both in the supplied implementation and evidence.
-2. Which sentence overstates deployment, merchant verification, AI integration, security, novelty or user demand? Suggest an accurate replacement with the same persuasive force.
-3. Can you explain the product after one reading? Rewrite the opening to make the family benefit and the three payment outcomes clearer without adding claims.
-4. Which single proof should the three-minute demo show to make this application credible? Distinguish a consumer sample receipt from an actual Monad receipt.
-5. Does the text acknowledge that the parent can change rules or pause spending, and that this prototype has no refund/recovery path? Identify any misleading implication about student control.
-6. Suggest one genuine strength that deserves more emphasis and one paragraph that can be cut. Do not manufacture compliments, integrations, metrics or team history.
-
-## Evidence needed before turning this draft into a final application
-
-- Actual public repository/project link, or access shared with the organizer using the applicant's own account.
-- Preserve the verified Monad deployment and real spend/approval transaction links already listed in Judge Instructions.
-- Reachable product URL and independently reproducible setup.
-- Hosted working-product demo, at most three minutes, plus separate pitch, at most two minutes.
-- Review the pitch introduction and product rationale, add any actual teammate introductions if appropriate, and answer the questions for any selected bounty.
-- A final wording update reflecting completed proof, while retaining the distinction between consumer sample funds and testnet signing.
+Application text and links are ready. The applicant should review team details, visibility/organizer-showcase choices and the platform's submission checkboxes, then submit through their own account. Add a bounty only after answering its exact questions with genuine integration evidence. No teammates, customer results or winning outcome are invented.

@@ -1,67 +1,53 @@
-# Kin current state — 12 October 2026
+# Kin current state — 13 October 2026
 
-## Product direction
+## Public deliverables
 
-Kin is money with guardrails for Metropolis's Consumer Products & Payments track. The central interaction is an everyday payment, a requested exception and approval that still respects the current hard rules.
+- [Live app](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/).
+- [Separate Monad Testnet lab](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/#/testnet).
+- [Technical demo, 179 seconds](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html).
+- [Pitch, 87 seconds](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html).
+- [Public GitHub source](https://github.com/Pradhyut21/Kin).
+- [Copy-ready application](submission/SUBMISSION_COPY_READY.txt) and [exact field counts](submission/FIELD_COUNTS.json).
 
-The consumer interface is a sample-credit prototype with local role switching. The separate Monad Testnet lab has genuine deployed contracts and recorded test-token transactions. Sample receipts are not chain receipts.
+Native Site publication succeeded, and the root app/player pages returned HTTP 200. Both final MP4 renders passed verification. Application fields have genuine links and no placeholders. The applicant still reviews platform/team/visibility details and submits through their own account.
 
-## Completed and supported by public evidence
+## Product and source boundaries
 
-- Three core contracts deployed on Monad Testnet, chain 10143, and wired through five confirmed transactions. Public-RPC reads verified code, supported Agora testnet AUSD and dependency links.
-- Student consent, a 100 test AUSD stream, configured recipient-bound policies and registered receiving wallets.
-- A 17-stage disposable-wallet setup flow: normal 1 test AUSD spend, queued 10 test AUSD request, tightened cap to 8, read-only approval rejection, restored cap to 20, and confirmed 10 test AUSD approval/execution.
-- Read-only blocked-recipient rejection against the deployed policy. Both denial proofs are eth_call simulations, not broadcast failed transactions.
-- Fresh browser-lab footage showing a real 1 test AUSD payment, a real 10 test AUSD queued request and recorded parent approval/execution. Receipt/log verification confirmed the queued request had no token transfer and request 2 resolved.
-- Consumer proof footage with a $249 sample request, hard cap changed to $200, approval rejected without debit, then restored cap and a single successful resolution.
-- Paste-ready application fields, exact character counts, proposed adult student/parent pilot strategy and independent AI critique.
-- Synthetic voice tracks and captions generated; compositions prepared for a 179-second technical demo and 87-second pitch.
+Kin targets Consumer Products & Payments. The consumer prototype uses sample credits and visible local role switching. A separate wallet-based lab connects to real deployed Monad Testnet contracts. Demo receipts are distinct from genuine test-token receipts.
 
-Public sources of evidence:
+HashRouter replaces BrowserRouter solely to make deep-route refreshes work on static hosting. The route paths, interface, business logic and wallet guards are retained. The skip link focuses and scrolls to main content without changing the hash route. Public lab links use `/#/testnet`.
 
-- `contracts/deployments/monad-testnet.json`: deployment addresses and five successful receipts.
-- `submission/REAL_TESTNET_DEMO_EVIDENCE.json`: initial stream and 17-stage setup flow.
-- `submission/TESTNET_VIDEO_RECEIPT_EVIDENCE.json`: recorded browser-flow receipts/events and final snapshot.
-- `submission/APPLICATION_DRAFT.md`, `submission/SUBMISSION_COPY_READY.txt`, `submission/FIELD_COUNTS.json`: application and limits.
-- `submission/AI_JUDGE_REVIEW.md`: independent internal AI critique; original review predates the verified deployment.
+The parent can change rules and pause spending after student consent. Earned entitlement is preserved, but unrestricted withdrawal/refund/recovery is unimplemented. Registered categories describe recipient addresses, not purchase contents or verified retailer acceptance.
 
-At block **70411769**, recorded vault escrow/token balance was **77 test AUSD**, grocery recipients had received 3, technology recipients 20, the blocked wallet 0, and no requests were pending. Later transactions may change these values.
+## Verified deployment and recording
 
-## Recording and authentication boundary
+Three core contracts on Monad Testnet, chain 10143:
 
-The real browser recording used a visible disposable project TEST wallet bridge to sign clicked testnet actions. No wallet-extension modal, passkey or production user authentication was demonstrated. Private keys remained outside the browser, and the bridge was stopped after capture.
+- StreamVault `0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3`.
+- PolicyModule `0x07A3d10E739A646894855bCd68A9CB2266594034`.
+- ApprovalQueue `0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF`.
 
-The ordinary injected-wallet lab path is implemented separately. The consumer demo's Priya/Mom switch is not wallet authentication. The accelerated 0.5 test AUSD/second stream is a recording aid, not an allowance recommendation.
+The [deployment manifest](contracts/deployments/monad-testnet.json) records five confirmed deployment/wiring transactions. A consented 100 test AUSD stream and configured policies/recipients underpin the [17-stage setup ledger](submission/REAL_TESTNET_DEMO_EVIDENCE.json).
 
-## Existing software checks
+The [fresh browser-recording evidence](submission/TESTNET_VIDEO_RECEIPT_EVIDENCE.json) verifies normal 1 test AUSD payment, queued 10 test AUSD request without a transfer, and parent execution. At block 70411769, recorded escrow/token balance was 77 test AUSD, recipients had received 3 grocery/20 technology/0 blocked, and no requests were pending. This is a pinned historical snapshot.
 
-The 5 October revision recorded 30 frontend tests, 12 API tests, 32 contract regression groups including 50 deterministic accrual cases, 5 indexer accounting tests and 14 browser acceptance checks. Those are dated historical results; this documentation revision did not rerun the full suite.
+Both chain hard-denial proofs are read-only eth_call simulations, not broadcast failed transactions. The consumer video separately demonstrates a $249 sample request, cap tightened to $200, failed approval without debit, and resolution after restoring the cap.
 
-The executed local contract path used pinned solc/Ganache. Foundry execution was unavailable. No independent security audit has been performed. The raw-P256 account remains excluded.
+The real capture uses a visibly labeled disposable project TEST wallet bridge, stopped after recording. It does not demonstrate a passkey, extension confirmation modal or production authentication. The public app contains no private key or signing bridge.
 
-## Current output status
+## Verification and media
 
-Media project: `D:/SAANS/deliverables/brag-output-2026-10-11-182558/kin-metropolis-2026-10-12`.
+The final media passed runtime/frame/codec/audio/black-frame checks and visual review: technical demo 179 seconds/5,370 frames; pitch 87 seconds/2,610 frames. Native players report 1920×1080, playback advances, English tracks are valid and disabled by default, and the pages fit mobile viewports. Local preview supports byte ranges; the public host serves whole-file HTTP 200 responses instead. Public MP4 MIME types and full-file hashes match the verified exports.
 
-Planned final files: `Kin-Technical-Demo.mp4` (179 seconds) and `Kin-Pitch.mp4` (87 seconds), with corresponding SRT files. Compositions and voice tracks exist; final render and QA are pending. Do not label the final MP4s complete until output metadata and visual/audio QA have passed.
+Local media project: `D:/SAANS/deliverables/brag-output-2026-10-11-182558/kin-metropolis-2026-10-12`. Reports include FINAL_VIDEO_VERIFICATION.json, SITE_LOCAL_QA.json and SITE_MEDIA_QA.json. Source and voice metadata preserve provenance; narration is synthetic, not the builder's recorded voice.
 
-No public repository, app or hosted video URL is available yet. Submission-platform fields remain drafts until those links and the applicant's final review are supplied.
+The 13 October routing revision passed 30 existing frontend unit tests, both frontend production builds, 15 browser flow checks, and explicit reloads of all eight hash routes. The skip link focuses main content without changing the route. All checked mobile routes fit a 390px viewport, with no browser runtime errors. Media-player checks passed again after rebuilding. Earlier 5 October results remain dated history: 12 API tests, 32 local-EVM contract regression groups, 5 indexer tests and 14 prior browser checks. No independent security audit is claimed.
 
-## Honest prototype limits
+## Honest limits and next work
 
-The parent can change rules and pause the stream after the student consents to the funding relationship. Earned entitlement survives pauses, but there is no unrestricted student withdrawal or refund/recovery path.
+No production fiat on-ramp, bank payout, live FX, verified retailer integration, reviewed Mera/passkey wallet or deployed Envio indexer exists. The raw-P256 account is excluded. Consumer/contract budget-reset semantics differ. Onchain metadata is public.
 
-The recipient registry binds addresses and categories; it is not verified merchant identity or proof of goods purchased. Retail checkout, fiat payout, FX, a reviewed passkey/Mera wallet and a deployed Envio indexer are unimplemented. Consumer and contract budget-reset semantics differ. Onchain events may expose family relationships and payment metadata.
+No sponsor bounty, user-trial result, traction, revenue, unique-first status or winning outcome is asserted. The first-market strategy is a proposed opt-in testnet pilot with adult students, funding parents and registered receiving wallets.
 
-No user trials, traction, revenue, unique-first claim, sponsor-bounty qualification or selection outcome is asserted. The first market strategy is a proposed opt-in testnet pilot with adult students, funding parents and registered receiving wallets.
-
-## Next steps
-
-1. Finish MP4 rendering and verify duration, footage, captions and voice.
-2. Publish the repository/app and host both videos; add the actual URLs to the application fields.
-3. Review the pitch introduction and product rationale; confirm any actual teammate introductions if needed.
-4. Verify application eligibility and any chosen bounty's exact questions in the applicant's account.
-5. Run proposed user trials and address consumer signing, exit/recovery, privacy and production readiness before a real-money release.
-
-README.md and SUBMISSION.md reflect the current deployment/recording evidence. Older architecture/research documents retain their dates; archived conceptual documents are not proof of historical integration claims.
+Next work is applicant review/submission, proposed user trials, consumer wallet onboarding, exit/recovery, privacy and appropriate independent review before real funds. No application submission or organizer email has been performed.
 

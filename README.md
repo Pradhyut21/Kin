@@ -2,6 +2,8 @@
 
 **Money with guardrails for families living apart.**
 
+[Open Kin](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/) · [Watch the demo · 2:59](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html) · [Watch the pitch · 1:27](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html) · [Source](https://github.com/Pradhyut21/Kin)
+
 A transfer answers “did the money arrive?” Kin answers what comes next: **what can I spend now, what needs a conversation, and why was a payment declined?**
 
 Kin releases a prepaid allowance over time. Everyday payments follow clear rules. Larger purchases ask the funding parent. Approval grants an exception to the soft threshold and still faces the **current** recipient binding, blocklist, budgets and available allowance.
@@ -100,4 +102,4 @@ Consumer sample credits and real testnet signing are separate. Recipient registr
 
 [Application text](submission/SUBMISSION_COPY_READY.txt) · [Evidence overview](SUBMISSION.md) · [Independent AI critique](submission/AI_JUDGE_REVIEW.md)
 
-Hosted product/demo/pitch links will be added after publication is verified. Pilots, consumer wallet onboarding, recovery, privacy review and sponsor-bounty qualification remain future work.
+Pilots, consumer wallet onboarding, recovery, privacy review and sponsor-bounty qualification remain future work.

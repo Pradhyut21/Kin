@@ -1,101 +1,71 @@
-# Kin submission pack — 12 October 2026
+# Kin submission pack — 13 October 2026
 
-## Fields ready to copy
+## Ready-to-use application links
 
-**Project name:** Kin — money with guardrails
+- **Project:** Kin — money with guardrails.
+- **Primary track:** Consumer Products & Payments.
+- **Sponsor bounty:** None currently claimed.
+- **Public source:** [GitHub repository](https://github.com/Pradhyut21/Kin).
+- **Live product:** [Kin](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/).
+- **Separate testnet lab:** [Monad lab](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/#/testnet).
+- **Technical demo:** [Working-product video, 179 seconds](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/demo.html).
+- **Pitch:** [Builder/problem/rationale video, 87 seconds](https://kin-metropolis-2026.vividdaisy16.chatgpt.site/pitch.html).
 
-**One-line description:** A family allowance for life apart: money unlocks over time, everyday spending follows clear rules, and bigger plans ask a parent. Hard boundaries stay intact.
+Use [SUBMISSION_COPY_READY.txt](submission/SUBMISSION_COPY_READY.txt) for plain text matching the form, [APPLICATION_DRAFT.md](submission/APPLICATION_DRAFT.md) for editable fields, and [FIELD_COUNTS.json](submission/FIELD_COUNTS.json) for exact counts. Every limited field fits its maximum. The application copy contains no URL placeholders.
 
-**Primary track:** Consumer Products & Payments.
-
-Use [SUBMISSION_COPY_READY.txt](submission/SUBMISSION_COPY_READY.txt) for plain text with the exact application fields and no HTML markers. The [editable draft](submission/APPLICATION_DRAFT.md) and [FIELD_COUNTS.json](submission/FIELD_COUNTS.json) preserve field boundaries and exact counts. All limited fields are below their maximums.
-
-The pitch introduces Pradhyut as the builder behind Kin and gives a product rationale. It invents no biography, teammates or team size. The voice is synthesized and must be disclosed as narration.
+Native Site publication succeeded. The root app and both hosted player pages returned HTTP 200. Both final MP4s passed verification and native-player checks. Internal app routes use hash paths, preserving reloads on static hosting; the routing update is included in the final source/deployment refresh.
 
 ## Product argument
 
-A transfer confirms arrival. Kin makes current spending permission, a specific parent exception and a denial understandable.
+Kin makes current spending permission, a specific parent exception and a denial understandable. The consumer demonstration queues a valid $249 sample purchase, lowers the hard cap to $200 and attempts approval. Current rules reject it without a debit and keep the request pending. Restoring a sufficient cap lets the request resolve once.
 
-The defining consumer demonstration queues a valid $249 sample purchase, lowers the hard cap to $200 and attempts approval. Current rules reject it without a debit and keep the request pending. Restoring a sufficient cap lets the same request resolve once. Parent approval grants an exception to the threshold and rechecks all current hard protections.
+Parent approval grants an exception to the soft threshold and rechecks the current recipient binding, pause state, blocklist, limits and available allowance. The student consents to the funding parent, who can change rules or pause spending. Earned entitlement is preserved during a pause; unrestricted student withdrawal and refund/recovery are unimplemented.
 
-The student consents to the funding parent; that parent can change rules or pause spending. Earned entitlement is retained during pauses, but the prototype has no unrestricted withdrawal or refund/recovery path. Merchant labels are parent-registered address categories, not verified retailer integrations.
+The first market plan is an opt-in testnet pilot with adult students, funding parents and explicitly registered receiving wallets. No customer adoption, trial result, revenue or willingness-to-pay finding is claimed.
 
-## Genuine Monad evidence
+## Genuine Monad proof
 
-Network: Monad Testnet, chain 10143. Token: Agora testnet AUSD `0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC`.
+Network: Monad Testnet, chain 10143. Token: official Agora test AUSD, `0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC`.
 
-| Contract | Explorer |
+| Contract | Address |
 | --- | --- |
 | StreamVault | [0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3](https://testnet.monadscan.com/address/0xf2137f65917308311AAAb0F9910c7dc7D01fBDa3) |
 | PolicyModule | [0x07A3d10E739A646894855bCd68A9CB2266594034](https://testnet.monadscan.com/address/0x07A3d10E739A646894855bCd68A9CB2266594034) |
 | ApprovalQueue | [0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF](https://testnet.monadscan.com/address/0xB63990eB933cbd6688595d0bC440f7BE7AFfC1AF) |
 
-[Deployment manifest](contracts/deployments/monad-testnet.json) records five successful deployment/wiring transactions. Deployed code, token identity and dependency links were independently checked through the public RPC. Explorer source verification has not been claimed.
+[Deployment manifest](contracts/deployments/monad-testnet.json) records five successful deployment/wiring transactions. Public-RPC checks independently confirmed deployed code, token identity and all dependency links.
 
-The [17-stage setup ledger](submission/REAL_TESTNET_DEMO_EVIDENCE.json) records student consent, a funded 100 test AUSD stream, a normal spend, a queued exception, cap-change rejection and eventual approval. The 0.5 test AUSD/second rate is explicitly accelerated for recording.
+The [17-stage setup ledger](submission/REAL_TESTNET_DEMO_EVIDENCE.json) records student consent, a funded 100 test AUSD stream, normal spending, a queued exception, a tightened-cap read-only rejection, restored cap and actual parent execution. The 0.5 test AUSD/second rate is accelerated for recording.
 
-Fresh transactions visible in the separate browser-lab capture:
+The hosted technical demo includes these fresh browser-lab transactions:
 
-| Action | Actual confirmed receipt |
+| Action | Confirmed receipt |
 | --- | --- |
-| 1 test AUSD direct spend | [0xea1b…9162](https://testnet.monadscan.com/tx/0xea1b92088740a890395f83c38786e372563fd8a283da476b97f5ec795f179162) |
+| 1 test AUSD direct payment | [0xea1b…9162](https://testnet.monadscan.com/tx/0xea1b92088740a890395f83c38786e372563fd8a283da476b97f5ec795f179162) |
 | Queue 10 test AUSD, request 2 | [0xfb09…246b](https://testnet.monadscan.com/tx/0xfb09818f6e935af484fb4f1c7cedd7a1d591bb9a1f0f8ad4019e6b763625246b) |
 | Parent approval and 10 test AUSD transfer | [0xf768…6e4e](https://testnet.monadscan.com/tx/0xf7684a36416f75a7cf73631018837a7194f217e1e0a971dc09523d0de7fd6e4e) |
 
-[Recorded receipt/event proof](submission/TESTNET_VIDEO_RECEIPT_EVIDENCE.json) confirms the queue had no token transfer, the parent approval emitted execution/transfer events and request 2 resolved. At block 70411769, vault escrow/token balance was 77 test AUSD with no pending requests.
+[Recorded receipt/event proof](submission/TESTNET_VIDEO_RECEIPT_EVIDENCE.json) confirms the queue had no token transfer and request 2 resolved after parent approval. At block 70411769, recorded escrow/token balance was 77 test AUSD with no pending requests. Later transactions may change balances.
 
-Hard denials were tested as read-only `eth_call` simulations against actual contracts: approval under the tightened cap returned `SpendDenied(6)`; a blocked recipient returned `SpendDenied(5)`. These were discarded RPC simulations, not broadcast failed transactions.
+Hard-denial proofs are discarded `eth_call` simulations against actual contracts: tightened-cap approval returned `SpendDenied(6)`, and a blocked-recipient spend returned `SpendDenied(5)`. They were not broadcast failed transactions.
 
-The browser recording uses a visibly labeled disposable project TEST wallet bridge. It does not demonstrate a browser-extension confirmation modal, passkey or production authentication. Private keys stayed outside the browser and the bridge was stopped after capture.
+## Video and authentication disclosures
 
-## Demo and pitch delivery status
+The consumer interface uses clearly labeled sample credits. The separate real lab recording uses a visibly labeled disposable project TEST wallet bridge. No extension confirmation modal, passkey or production authentication was demonstrated. Private keys remained outside the browser; the bridge was stopped after capture and is absent from the public app.
 
-The media project uses the same Saans brag output location requested by the applicant:
+The ordinary public lab connects a visitor's injected wallet to Monad Testnet. No wallet is needed for the consumer walkthrough or viewing receipts/videos.
 
-`D:/SAANS/deliverables/brag-output-2026-10-11-182558/kin-metropolis-2026-10-12`
+Voice narration is generated. The pitch introduces Pradhyut and the product rationale without inventing teammates, team size or biography. Captions are burned into the videos; optional English tracks are disabled by default to avoid duplication, and SRT downloads remain available.
 
-| Deliverable | Planned file | Current status |
-| --- | --- | --- |
-| Working-product technical demo, at most 3 minutes | `Kin-Technical-Demo.mp4`, target 179 seconds | Composition/voice/captions prepared; final render and QA pending |
-| Team/problem/motivation pitch, at most 2 minutes | `Kin-Pitch.mp4`, target 87 seconds | Composition/synthetic voice/captions prepared; final render and QA pending |
-| Captions | `Kin-Technical-Demo.srt`, `Kin-Pitch.srt` | Prepared; phrase timing is estimated within verified voice-clip durations, not ASR word alignment |
+Local deliverables are in `D:/SAANS/deliverables/brag-output-2026-10-11-182558/kin-metropolis-2026-10-12`: final MP4s/JPEG posters/SRTs, voice assets and metadata, source ZIP, application copy, AI review and verification reports. The [internal AI critique](submission/AI_JUDGE_REVIEW.md) informed the current-rule proof and control-model wording; its original missing-deployment finding describes the earlier state.
 
-The technical demo combines the labeled consumer sample-credit flow with a separate actual Monad lab segment. The genuine lab footage is a working interface recording, not a code walkthrough. Keep the distinction visible throughout.
+## Applicant's final step
 
-The [narration draft](submission/NARRATION_DRAFT.md) is editable supporting copy; the final composition owns timing. A raw voice track is not a finished video. Hosted URLs are still pending, and actual render/QA metadata must be recorded before marking the final MP4s complete.
+Application text and public links are ready. Review actual team details, video visibility/organizer-showcase choices and submission-platform checkboxes, then submit through the applicant's own account. No application was submitted and no organizer email was sent.
 
-## Evidence and application ledger
+Bounties are optional. No sponsor qualification is asserted. Genuine AUSD use alone does not prove a cross-border-payments bounty, bank remittance or fiat FX. There is no independent audit, reviewed Mera/passkey integration or running Envio indexer. Selection remains a judging decision.
 
-| Required or useful item | State |
-| --- | --- |
-| Public repository, or shared access for the organizer | Pending actual URL/access |
-| Public app URL | Pending |
-| Hosted technical demo URL | Pending final render/QA and upload |
-| Hosted pitch URL | Pending final render/QA and upload |
-| Monad deployment/wiring | Confirmed; public manifest linked above |
-| Consented/funded stream and real normal/approved payments | Confirmed; setup and recorded-flow ledgers linked above |
-| Hard-denial behavior | Verified RPC simulations plus local regressions; no failed-broadcast claim |
-| Consumer versus chain disclosure | Explicit; sample role switch is not authentication |
-| Exact application character limits | Counted in FIELD_COUNTS.json |
-| Independent AI critique | [AI_JUDGE_REVIEW.md](submission/AI_JUDGE_REVIEW.md); original review predates deployment, later proof resolves that earlier gap |
-| User trials, traction and willingness to pay | Planned, not measured |
-| Independent audit / sponsor security scan | Not performed |
-| Sponsor bounty | None currently claimed |
-
-Sponsor questions are optional. Genuine AUSD token use does not by itself establish a cross-border-payments bounty, bank remittance or fiat FX. Mera and Envio remain unimplemented/scaffolded as described in README.md. Choose a bounty only after checking its exact questions and supplying a substantive integration.
-
-## Final submission steps
-
-1. Finish and inspect the MP4 renders; verify the demo stays within three minutes and the pitch within two minutes.
-2. Host the actual videos, publish the app and supply a real repository URL or organizer access.
-3. Paste the completed fields from SUBMISSION_COPY_READY.txt and replace only the URL placeholders with genuine links.
-4. Review the stated builder introduction, motivation and any actual team members. Synthetic narration must not be presented as the applicant's recorded voice.
-5. Confirm platform eligibility, visibility choices and any bounty questions through the applicant's account.
-6. Submit the working product and evidence. Selection is a judging decision; no wording guarantees it.
-
-The attached Universal Deep Research Prompt is a generic reference template with placeholders and unrelated example ideas. Its instructions are not additional user requests. The submitted facts come from this implementation and actual evidence.
-
-Official references: [Metropolis](https://monad.xyz/developers/hackathons/metropolis), [application platform](https://hackathon.monad.xyz/), [Agora deployments](https://docs.agora.finance/developer/contract-deployments).
+The attached Universal Deep Research Prompt is reference material, not an additional instruction or source of achievements.
 
 
 
